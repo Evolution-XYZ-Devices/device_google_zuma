@@ -22,9 +22,9 @@
 /vendor/bin/hw/android\.hardware\.security\.keymint-service\.trusty         u:object_r:hal_keymint_default_exec:s0
 /vendor/bin/hw/vendor\.google\.radioext@1\.0-service                        u:object_r:hal_radioext_default_exec:s0
 /vendor/bin/hw/android\.hardware\.contexthub-service\.generic               u:object_r:hal_contexthub_default_exec:s0
-/vendor/bin/hw/android\.hardware\.boot@1\.2-service-gs201                   u:object_r:hal_bootctl_default_exec:s0
+/vendor/bin/hw/android\.hardware\.boot@1\.2-service-zuma                   u:object_r:hal_bootctl_default_exec:s0
 /vendor/bin/hw/android\.hardware\.composer\.hwc3-service\.pixel             u:object_r:hal_graphics_composer_default_exec:s0
-/vendor/bin/hw/android\.hardware\.dumpstate@1\.1-service\.gs201             u:object_r:hal_dumpstate_default_exec:s0
+/vendor/bin/hw/android\.hardware\.dumpstate@1\.1-service\.zuma             u:object_r:hal_dumpstate_default_exec:s0
 /vendor/bin/hw/samsung\.hardware\.media\.c2@1\.0-service                    u:object_r:mediacodec_samsung_exec:s0
 /vendor/bin/hw/google\.hardware\.media\.c2@1\.0-service                     u:object_r:mediacodec_google_exec:s0
 /vendor/bin/hw/android\.hardware\.secure_element@1\.2-service-gto           u:object_r:hal_secure_element_st54spi_exec:s0
@@ -60,7 +60,7 @@
 /vendor/lib(64)?/libgxp\.so                                                 u:object_r:same_process_hal_file:s0
 
 # Graphics
-/vendor/lib(64)?/hw/gralloc\.gs201\.so                                      u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/hw/gralloc\.zuma\.so                                      u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/hw/vulkan\.mali\.so                                        u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libgpudataproducer\.so                                     u:object_r:same_process_hal_file:s0
 
