@@ -101,7 +101,7 @@ genfscon sysfs /devices/platform/17000070.devfreq_mfc/devfreq/17000070.devfreq_m
 genfscon sysfs /devices/platform/17000080.devfreq_bo/devfreq/17000080.devfreq_bo/cur_freq               u:object_r:sysfs_devfreq_cur:s0
 
 # OTA
-genfscon sysfs /devices/platform/14700000.ufs/pixel/boot_lun_enabled           u:object_r:sysfs_ota:s0
+genfscon sysfs /devices/platform/13200000.ufs/pixel/boot_lun_enabled           u:object_r:sysfs_ota:s0
 
 # Display
 genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/gamma                                u:object_r:sysfs_display:s0
@@ -138,21 +138,21 @@ genfscon sysfs /devices/platform/mfc/video4linux/video                         u
 # Storage
 genfscon proc /fs/f2fs                                                  u:object_r:proc_f2fs:s0
 genfscon proc /sys/vm/swappiness                                        u:object_r:proc_dirty:s0
-genfscon sysfs /devices/platform/14700000.ufs/slowio_read_cnt           u:object_r:sysfs_scsi_devices_0000:s0
-genfscon sysfs /devices/platform/14700000.ufs/slowio_write_cnt          u:object_r:sysfs_scsi_devices_0000:s0
-genfscon sysfs /devices/platform/14700000.ufs/slowio_unmap_cnt          u:object_r:sysfs_scsi_devices_0000:s0
-genfscon sysfs /devices/platform/14700000.ufs/slowio_sync_cnt           u:object_r:sysfs_scsi_devices_0000:s0
-genfscon sysfs /devices/platform/14700000.ufs/manual_gc                 u:object_r:sysfs_scsi_devices_0000:s0
-genfscon sysfs /devices/platform/14700000.ufs/io_stats                  u:object_r:sysfs_scsi_devices_0000:s0
-genfscon sysfs /devices/platform/14700000.ufs/req_stats                 u:object_r:sysfs_scsi_devices_0000:s0
-genfscon sysfs /devices/platform/14700000.ufs/err_stats                 u:object_r:sysfs_scsi_devices_0000:s0
-genfscon sysfs /devices/platform/14700000.ufs/device_descriptor         u:object_r:sysfs_scsi_devices_0000:s0
-genfscon sysfs /devices/platform/14700000.ufs/clkgate_enable            u:object_r:sysfs_scsi_devices_0000:s0
-genfscon sysfs /devices/platform/14700000.ufs/hibern8_on_idle_enable    u:object_r:sysfs_scsi_devices_0000:s0
-genfscon sysfs /devices/platform/14700000.ufs/health_descriptor         u:object_r:sysfs_scsi_devices_0000:s0
-genfscon sysfs /devices/platform/14700000.ufs/host0/target0:0:0/0:0:0:  u:object_r:sysfs_scsi_devices_0000:s0
-genfscon sysfs /devices/platform/14700000.ufs/ufs_stats                 u:object_r:sysfs_scsi_devices_0000:s0
-genfscon sysfs /devices/platform/14700000.ufs/attributes/wb_avail_buf   u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/platform/13200000.ufs/slowio_read_cnt           u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/platform/13200000.ufs/slowio_write_cnt          u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/platform/13200000.ufs/slowio_unmap_cnt          u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/platform/13200000.ufs/slowio_sync_cnt           u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/platform/13200000.ufs/manual_gc                 u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/platform/13200000.ufs/io_stats                  u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/platform/13200000.ufs/req_stats                 u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/platform/13200000.ufs/err_stats                 u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/platform/13200000.ufs/device_descriptor         u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/platform/13200000.ufs/clkgate_enable            u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/platform/13200000.ufs/hibern8_on_idle_enable    u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/platform/13200000.ufs/health_descriptor         u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/platform/13200000.ufs/host0/target0:0:0/0:0:0:  u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/platform/13200000.ufs/ufs_stats                 u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/platform/13200000.ufs/attributes/wb_avail_buf   u:object_r:sysfs_scsi_devices_0000:s0
 
 # debugfs
 genfscon debugfs /f2fs                                                  u:object_r:debugfs_f2fs:s0
