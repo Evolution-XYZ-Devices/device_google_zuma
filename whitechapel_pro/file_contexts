@@ -131,6 +131,7 @@
 /dev/lwis-sensor-sandworm                                                   u:object_r:lwis_device:s0
 /dev/lwis-slc                                                               u:object_r:lwis_device:s0
 /dev/lwis-top                                                               u:object_r:lwis_device:s0
+/dev/lwis-tof-vl53l8                                                        u:object_r:lwis_device:s0
 /dev/lwis-votf                                                              u:object_r:lwis_device:s0
 /dev/dri/card0                                                              u:object_r:graphics_device:s0
 /dev/fimg2d                                                                 u:object_r:graphics_device:s0
