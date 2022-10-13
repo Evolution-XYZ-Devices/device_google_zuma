@@ -121,6 +121,7 @@
 /dev/lwis-ois-jotnar                                                        u:object_r:lwis_device:s0
 /dev/lwis-pdp                                                               u:object_r:lwis_device:s0
 /dev/lwis-scsc                                                              u:object_r:lwis_device:s0
+/dev/lwis-sensor-boitata                                                      u:object_r:lwis_device:s0
 /dev/lwis-sensor-buraq                                                      u:object_r:lwis_device:s0
 /dev/lwis-sensor-dokkaebi                                                   u:object_r:lwis_device:s0
 /dev/lwis-sensor-kraken                                                     u:object_r:lwis_device:s0
