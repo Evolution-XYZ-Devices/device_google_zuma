@@ -13,9 +13,6 @@ SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += device/google/zuma-sepolicy/system_ext/priva
 #
 # Pixel-wide
 #
-# Dauntless sepolicy (b/199685763)
-BOARD_SEPOLICY_DIRS += device/google/zuma-sepolicy/dauntless
-
 #   PowerStats HAL
 BOARD_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/powerstats
 
