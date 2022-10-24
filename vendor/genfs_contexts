@@ -1,0 +1,4 @@
+# SJTAG
+genfscon sysfs /devices/platform/sjtag_ap/interface                       u:object_r:sysfs_sjtag:s0
+genfscon sysfs /devices/platform/sjtag_gsa/interface                      u:object_r:sysfs_sjtag:s0
+

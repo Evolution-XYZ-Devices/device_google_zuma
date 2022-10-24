@@ -16,3 +16,14 @@ type vendor_fw_file, vendor_file_type, file_type;
 type modem_img_file, contextmount_type, file_type, vendor_file_type;
 allow modem_img_file self:filesystem associate;
 
+# sysfs
+type sysfs_sjtag, fs_type, sysfs_type;
+userdebug_or_eng(`
+    typeattribute sysfs_sjtag mlstrustedobject;
+')
+
+# Vendor sched files
+userdebug_or_eng(`
+    typeattribute proc_vendor_sched mlstrustedobject;
+')
+

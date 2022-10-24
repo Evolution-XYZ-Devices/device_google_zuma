@@ -1,0 +1,2 @@
+# Sub System Ramdump
+user=system seinfo=platform name=com.google.SSRestartDetector domain=ssr_detector_app type=system_app_data_file levelFrom=user
