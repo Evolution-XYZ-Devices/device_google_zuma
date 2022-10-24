@@ -1,4 +1,0 @@
-# b/209889068
-dontaudit google_camera_app vendor_default_prop:file { getattr };
-dontaudit google_camera_app vendor_default_prop:file { map };
-dontaudit google_camera_app vendor_default_prop:file { open };
