@@ -1,0 +1,1 @@
+allow init modem_efs_file:dir mounton;

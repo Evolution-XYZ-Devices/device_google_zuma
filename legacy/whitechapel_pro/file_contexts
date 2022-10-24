@@ -6,7 +6,6 @@
 /vendor/bin/chre                                                            u:object_r:chre_exec:s0
 /vendor/bin/cbd                                                             u:object_r:cbd_exec:s0
 /vendor/bin/modem_svc_sit                                                   u:object_r:modem_svc_sit_exec:s0
-/vendor/bin/rfsd                                                            u:object_r:rfsd_exec:s0
 /vendor/bin/bipchmgr                                                        u:object_r:bipchmgr_exec:s0
 /vendor/bin/storageproxyd                                                   u:object_r:tee_exec:s0
 /vendor/bin/init\.radio\.sh                                                 u:object_r:init_radio_exec:s0
@@ -42,7 +41,6 @@
 /vendor/bin/hw/android\.hardware\.gxp\.logging@service-gxp-logging          u:object_r:gxp_logging_exec:s0
 
 # Vendor Firmwares
-/vendor/firmware(/.*)?                                                      u:object_r:vendor_fw_file:s0
 /vendor/firmware/mali_csffw\.bin                                            u:object_r:same_process_hal_file:s0
 /vendor/firmware/gxp_fw_core[0-3]                                           u:object_r:same_process_hal_file:s0
 
@@ -142,13 +140,6 @@
 /dev/st54spi                                                                u:object_r:st54spi_device:s0
 /dev/st33spi                                                                u:object_r:st33spi_device:s0
 /dev/ttyGS[0-3]                                                             u:object_r:serial_device:s0
-/dev/oem_ipc[0-7]                                                           u:object_r:radio_device:s0
-/dev/umts_boot0                                                             u:object_r:radio_device:s0
-/dev/umts_ipc0                                                              u:object_r:radio_device:s0
-/dev/umts_ipc1                                                              u:object_r:radio_device:s0
-/dev/umts_rfs0                                                              u:object_r:radio_device:s0
-/dev/umts_dm0                                                               u:object_r:radio_device:s0
-/dev/umts_router                                                            u:object_r:radio_device:s0
 /dev/logbuffer_tcpm                                                         u:object_r:logbuffer_device:s0
 /dev/sys/block/bootdevice(/.*)?                                             u:object_r:bootdevice_sysdev:s0
 /dev/socket/chre                                                            u:object_r:chre_socket:s0
@@ -171,7 +162,6 @@
 /dev/block/platform/13200000\.ufs/by-name/metadata                          u:object_r:metadata_block_device:s0
 /dev/block/platform/13200000\.ufs/by-name/mfg_data                          u:object_r:mfg_data_block_device:s0
 /dev/block/platform/13200000\.ufs/by-name/misc                              u:object_r:misc_block_device:s0
-/dev/block/platform/13200000\.ufs/by-name/modem_[ab]                        u:object_r:modem_block_device:s0
 /dev/block/platform/13200000\.ufs/by-name/modem_userdata                    u:object_r:modem_userdata_block_device:s0
 /dev/block/platform/13200000\.ufs/by-name/pbl_[ab]                          u:object_r:custom_ab_block_device:s0
 /dev/block/platform/13200000\.ufs/by-name/persist                           u:object_r:persist_block_device:s0
@@ -187,11 +177,8 @@
 
 # Data
 /data/vendor/slog(/.*)?                                                     u:object_r:vendor_slog_file:s0
-/data/vendor/radio(/.*)?                                                    u:object_r:radio_vendor_data_file:s0
 /data/vendor/modem_stat(/.*)?                                               u:object_r:modem_stat_data_file:s0
-/data/vendor/log(/.*)?                                                      u:object_r:vendor_log_file:s0
 /data/vendor/log/hwc(/.*)?                                                  u:object_r:vendor_hwc_log_file:s0
-/data/vendor/log/rfsd(/.*)?                                                 u:object_r:vendor_rfsd_log_file:s0
 /data/vendor/rild(/.*)?                                                     u:object_r:rild_vendor_data_file:s0
 /data/vendor/ss(/.*)?                                                       u:object_r:tee_data_file:s0
 /data/nfc(/.*)?                                                             u:object_r:nfc_data_file:s0
@@ -216,9 +203,6 @@
 /mnt/vendor/persist/display(/.*)?                                           u:object_r:persist_display_file:s0
 
 # Extra mount images
-/mnt/vendor/modem_img(/.*)?                                                 u:object_r:modem_img_file:s0
-/mnt/vendor/efs(/.*)?                                                       u:object_r:modem_efs_file:s0
-/mnt/vendor/efs_backup(/.*)?                                                u:object_r:modem_efs_file:s0
 /mnt/vendor/modem_userdata(/.*)?                                            u:object_r:modem_userdata_file:s0
 
 # Raw HID device

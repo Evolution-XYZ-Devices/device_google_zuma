@@ -1,11 +1,8 @@
 # Data
 type rild_vendor_data_file, file_type, data_file_type;
-type vendor_log_file, file_type, data_file_type;
 type vendor_hwc_log_file, file_type, data_file_type;
-type vendor_rfsd_log_file, file_type, data_file_type;
 type modem_stat_data_file, file_type, data_file_type;
 type vendor_slog_file, file_type, data_file_type;
-type radio_vendor_data_file, file_type, data_file_type;
 type updated_wifi_firmware_data_file, file_type, data_file_type;
 type tcpdump_vendor_data_file, file_type, data_file_type;
 type vendor_camera_data_file, file_type, data_file_type;
@@ -19,11 +16,7 @@ type powerstats_vendor_data_file, file_type, data_file_type;
 userdebug_or_eng(`
   typeattribute tcpdump_vendor_data_file mlstrustedobject;
   typeattribute vendor_slog_file mlstrustedobject;
-  typeattribute radio_vendor_data_file mlstrustedobject;
 ')
-
-# Exynos Firmware
-type vendor_fw_file, vendor_file_type, file_type;
 
 # sysfs
 type sysfs_chosen, sysfs_type, fs_type;
@@ -57,10 +50,6 @@ type vendor_dmabuf_debugfs, fs_type, debugfs_type;
 type vendor_dri_debugfs, fs_type, debugfs_type;
 type vendor_page_pinner_debugfs, fs_type, debugfs_type;
 
-# vendor extra images
-type modem_img_file, contextmount_type, file_type, vendor_file_type;
-allow modem_img_file self:filesystem associate;
-
 # persist
 type persist_battery_file, file_type, vendor_persist_type;
 type persist_camera_file, file_type, vendor_persist_type;
@@ -82,7 +71,6 @@ type vendor_usf_reg_edit, vendor_file_type, file_type;
 type vendor_dumpsys, vendor_file_type, file_type;
 
 # Modem
-type modem_efs_file, file_type;
 type modem_userdata_file, file_type;
 
 # SecureElement

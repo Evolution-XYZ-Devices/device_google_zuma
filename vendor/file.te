@@ -1,0 +1,18 @@
+# Data
+type vendor_log_file, file_type, data_file_type;
+type vendor_rfsd_log_file, file_type, data_file_type;
+type radio_vendor_data_file, file_type, data_file_type;
+userdebug_or_eng(`
+  typeattribute radio_vendor_data_file mlstrustedobject;
+')
+
+# Modem
+type modem_efs_file, file_type;
+
+# Exynos Firmware
+type vendor_fw_file, vendor_file_type, file_type;
+
+# vendor extra images
+type modem_img_file, contextmount_type, file_type, vendor_file_type;
+allow modem_img_file self:filesystem associate;
+
