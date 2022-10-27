@@ -2,7 +2,6 @@
 type rild_vendor_data_file, file_type, data_file_type;
 type vendor_hwc_log_file, file_type, data_file_type;
 type modem_stat_data_file, file_type, data_file_type;
-type vendor_slog_file, file_type, data_file_type;
 type updated_wifi_firmware_data_file, file_type, data_file_type;
 type tcpdump_vendor_data_file, file_type, data_file_type;
 type vendor_camera_data_file, file_type, data_file_type;
@@ -15,7 +14,6 @@ type uwb_data_vendor, file_type, data_file_type;
 type powerstats_vendor_data_file, file_type, data_file_type;
 userdebug_or_eng(`
   typeattribute tcpdump_vendor_data_file mlstrustedobject;
-  typeattribute vendor_slog_file mlstrustedobject;
 ')
 
 # sysfs
@@ -76,17 +74,6 @@ type modem_userdata_file, file_type;
 # SecureElement
 type sysfs_st33spi, sysfs_type, fs_type;
 typeattribute sysfs_st33spi mlstrustedobject;
-
-# Vendor sched files
-userdebug_or_eng(`
-    typeattribute proc_vendor_sched mlstrustedobject;
-')
-
-# SJTAG
-type sysfs_sjtag, fs_type, sysfs_type;
-userdebug_or_eng(`
-    typeattribute sysfs_sjtag mlstrustedobject;
-')
 
 # USB-C throttling stats
 type sysfs_usbc_throttling_stats, sysfs_type, fs_type;

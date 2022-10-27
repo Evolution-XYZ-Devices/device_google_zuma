@@ -1,9 +1,11 @@
 # Data
 type vendor_log_file, file_type, data_file_type;
 type vendor_rfsd_log_file, file_type, data_file_type;
+type vendor_slog_file, file_type, data_file_type;
 type radio_vendor_data_file, file_type, data_file_type;
 userdebug_or_eng(`
   typeattribute radio_vendor_data_file mlstrustedobject;
+  typeattribute vendor_slog_file mlstrustedobject;
 ')
 
 # Modem
@@ -15,4 +17,15 @@ type vendor_fw_file, vendor_file_type, file_type;
 # vendor extra images
 type modem_img_file, contextmount_type, file_type, vendor_file_type;
 allow modem_img_file self:filesystem associate;
+
+# sysfs
+type sysfs_sjtag, fs_type, sysfs_type;
+userdebug_or_eng(`
+    typeattribute sysfs_sjtag mlstrustedobject;
+')
+
+# Vendor sched files
+userdebug_or_eng(`
+    typeattribute proc_vendor_sched mlstrustedobject;
+')
 

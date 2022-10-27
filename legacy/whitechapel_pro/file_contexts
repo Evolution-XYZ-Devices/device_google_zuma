@@ -1,6 +1,5 @@
 # Binaries
 /vendor/bin/dmd                                                             u:object_r:dmd_exec:s0
-/vendor/bin/modem_logging_control                                           u:object_r:modem_logging_control_exec:s0
 /vendor/bin/sced                                                            u:object_r:sced_exec:s0
 /vendor/bin/vcd                                                             u:object_r:vcd_exec:s0
 /vendor/bin/chre                                                            u:object_r:chre_exec:s0
@@ -139,7 +138,6 @@
 /dev/st21nfc                                                                u:object_r:nfc_device:s0
 /dev/st54spi                                                                u:object_r:st54spi_device:s0
 /dev/st33spi                                                                u:object_r:st33spi_device:s0
-/dev/ttyGS[0-3]                                                             u:object_r:serial_device:s0
 /dev/logbuffer_tcpm                                                         u:object_r:logbuffer_device:s0
 /dev/sys/block/bootdevice(/.*)?                                             u:object_r:bootdevice_sysdev:s0
 /dev/socket/chre                                                            u:object_r:chre_socket:s0
@@ -176,7 +174,6 @@
 /dev/block/platform/13200000\.ufs/by-name/vendor_kernel_boot_[ab]           u:object_r:custom_ab_block_device:s0
 
 # Data
-/data/vendor/slog(/.*)?                                                     u:object_r:vendor_slog_file:s0
 /data/vendor/modem_stat(/.*)?                                               u:object_r:modem_stat_data_file:s0
 /data/vendor/log/hwc(/.*)?                                                  u:object_r:vendor_hwc_log_file:s0
 /data/vendor/rild(/.*)?                                                     u:object_r:rild_vendor_data_file:s0
