@@ -6,10 +6,6 @@ vendor.tcpdump.                            u:object_r:vendor_tcpdump_log_prop:s0
 persist.vendor.usb.                        u:object_r:vendor_usb_config_prop:s0
 vendor.usb.                                u:object_r:vendor_usb_config_prop:s0
 
-# for cbd
-vendor.cbd.                                u:object_r:vendor_cbd_prop:s0
-persist.vendor.cbd.                        u:object_r:vendor_cbd_prop:s0
-
 ro.vendor.config.build_carrier             u:object_r:vendor_carrier_prop:s0
 
 # test battery profile

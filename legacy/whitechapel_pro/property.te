@@ -1,4 +1,3 @@
-vendor_internal_prop(vendor_cbd_prop)
 vendor_internal_prop(vendor_carrier_prop)
 vendor_internal_prop(vendor_nfc_prop)
 vendor_internal_prop(vendor_secure_element_prop)

@@ -21,13 +21,7 @@
       - The default tag is consulted last if needed.
 -->
     <!-- google apps key -->
-    <signer signature="@GOOGLE" >
-      <seinfo value="google" />
-    </signer>
-    <signer signature="@UWB" >
-        <seinfo value="uwb" />
-    </signer>
-    <signer signature="@EUICCSUPPORTPIXEL" >
-        <seinfo value="EuiccSupportPixel" />
+    <signer signature="@MDS" >
+        <seinfo value="mds" />
     </signer>
 </policy>

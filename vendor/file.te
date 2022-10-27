@@ -19,6 +19,7 @@ type modem_img_file, contextmount_type, file_type, vendor_file_type;
 allow modem_img_file self:filesystem associate;
 
 # sysfs
+type sysfs_chosen, sysfs_type, fs_type;
 type sysfs_sjtag, fs_type, sysfs_type;
 userdebug_or_eng(`
     typeattribute sysfs_sjtag mlstrustedobject;
