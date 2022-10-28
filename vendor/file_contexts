@@ -1,17 +1,20 @@
 # Binaries
 /vendor/bin/rfsd                                                            u:object_r:rfsd_exec:s0
 /vendor/bin/modem_logging_control                                           u:object_r:modem_logging_control_exec:s0
+/vendor/bin/modem_svc_sit                                                   u:object_r:modem_svc_sit_exec:s0
 
 # Data
 /data/vendor/log/rfsd(/.*)?                                                 u:object_r:vendor_rfsd_log_file:s0
 /data/vendor/radio(/.*)?                                                    u:object_r:radio_vendor_data_file:s0
 /data/vendor/log(/.*)?                                                      u:object_r:vendor_log_file:s0
 /data/vendor/slog(/.*)?                                                     u:object_r:vendor_slog_file:s0
+/data/vendor/modem_stat(/.*)?                                               u:object_r:modem_stat_data_file:s0
 
 # vendor extra images
 /mnt/vendor/efs(/.*)?                                                       u:object_r:modem_efs_file:s0
 /mnt/vendor/efs_backup(/.*)?                                                u:object_r:modem_efs_file:s0
 /mnt/vendor/modem_img(/.*)?                                                 u:object_r:modem_img_file:s0
+/mnt/vendor/modem_userdata(/.*)?                                            u:object_r:modem_userdata_file:s0
 
 # Vendor Firmwares
 /vendor/firmware(/.*)?                                                      u:object_r:vendor_fw_file:s0

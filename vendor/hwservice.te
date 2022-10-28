@@ -1,3 +1,6 @@
 # dmd servcie
 type hal_vendor_oem_hwservice, hwservice_manager_type;
 
+# rild service
+type hal_exynos_rild_hwservice, hwservice_manager_type;
+

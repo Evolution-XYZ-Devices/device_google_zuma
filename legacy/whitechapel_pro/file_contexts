@@ -4,7 +4,6 @@
 /vendor/bin/vcd                                                             u:object_r:vcd_exec:s0
 /vendor/bin/chre                                                            u:object_r:chre_exec:s0
 /vendor/bin/cbd                                                             u:object_r:cbd_exec:s0
-/vendor/bin/modem_svc_sit                                                   u:object_r:modem_svc_sit_exec:s0
 /vendor/bin/bipchmgr                                                        u:object_r:bipchmgr_exec:s0
 /vendor/bin/storageproxyd                                                   u:object_r:tee_exec:s0
 /vendor/bin/init\.radio\.sh                                                 u:object_r:init_radio_exec:s0
@@ -174,7 +173,6 @@
 /dev/block/platform/13200000\.ufs/by-name/vendor_kernel_boot_[ab]           u:object_r:custom_ab_block_device:s0
 
 # Data
-/data/vendor/modem_stat(/.*)?                                               u:object_r:modem_stat_data_file:s0
 /data/vendor/log/hwc(/.*)?                                                  u:object_r:vendor_hwc_log_file:s0
 /data/vendor/rild(/.*)?                                                     u:object_r:rild_vendor_data_file:s0
 /data/vendor/ss(/.*)?                                                       u:object_r:tee_data_file:s0
@@ -198,9 +196,6 @@
 /mnt/vendor/persist/ss(/.*)?                                                u:object_r:persist_ss_file:s0
 /mnt/vendor/persist/uwb(/.*)?                                               u:object_r:persist_uwb_file:s0
 /mnt/vendor/persist/display(/.*)?                                           u:object_r:persist_display_file:s0
-
-# Extra mount images
-/mnt/vendor/modem_userdata(/.*)?                                            u:object_r:modem_userdata_file:s0
 
 # Raw HID device
 /dev/hidraw[0-9]*                        u:object_r:hidraw_device:s0
