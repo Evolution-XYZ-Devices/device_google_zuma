@@ -49,7 +49,6 @@ type vendor_page_pinner_debugfs, fs_type, debugfs_type;
 # persist
 type persist_battery_file, file_type, vendor_persist_type;
 type persist_camera_file, file_type, vendor_persist_type;
-type persist_modem_file, file_type, vendor_persist_type;
 type persist_sensor_reg_file, file_type, vendor_persist_type;
 type persist_ss_file, file_type, vendor_persist_type;
 type persist_uwb_file, file_type, vendor_persist_type;

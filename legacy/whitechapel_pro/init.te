@@ -1,6 +1,4 @@
-allow init modem_img_file:dir mounton;
 allow init mnt_vendor_file:dir mounton;
-allow init modem_img_file:filesystem { getattr mount relabelfrom };
 allow init custom_ab_block_device:lnk_file relabelto;
 
 # This is needed for chaining a boot partition vbmeta
@@ -11,7 +9,6 @@ allow init custom_ab_block_device:lnk_file relabelto;
 allow init boot_block_device:lnk_file relabelto;
 
 allow init persist_file:dir mounton;
-allow init modem_userdata_file:dir mounton;
 allow init ram_device:blk_file w_file_perms;
 allow init sysfs_scsi_devices_0000:file w_file_perms;
 

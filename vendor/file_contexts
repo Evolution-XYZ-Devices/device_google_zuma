@@ -2,6 +2,7 @@
 /vendor/bin/rfsd                                                            u:object_r:rfsd_exec:s0
 /vendor/bin/modem_logging_control                                           u:object_r:modem_logging_control_exec:s0
 /vendor/bin/modem_svc_sit                                                   u:object_r:modem_svc_sit_exec:s0
+/vendor/bin/cbd                                                             u:object_r:cbd_exec:s0
 
 # Data
 /data/vendor/log/rfsd(/.*)?                                                 u:object_r:vendor_rfsd_log_file:s0
@@ -15,6 +16,7 @@
 /mnt/vendor/efs_backup(/.*)?                                                u:object_r:modem_efs_file:s0
 /mnt/vendor/modem_img(/.*)?                                                 u:object_r:modem_img_file:s0
 /mnt/vendor/modem_userdata(/.*)?                                            u:object_r:modem_userdata_file:s0
+/mnt/vendor/persist/modem(/.*)?                                             u:object_r:persist_modem_file:s0
 
 # Vendor Firmwares
 /vendor/firmware(/.*)?                                                      u:object_r:vendor_fw_file:s0

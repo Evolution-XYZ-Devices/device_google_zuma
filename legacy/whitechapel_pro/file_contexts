@@ -3,7 +3,6 @@
 /vendor/bin/sced                                                            u:object_r:sced_exec:s0
 /vendor/bin/vcd                                                             u:object_r:vcd_exec:s0
 /vendor/bin/chre                                                            u:object_r:chre_exec:s0
-/vendor/bin/cbd                                                             u:object_r:cbd_exec:s0
 /vendor/bin/bipchmgr                                                        u:object_r:bipchmgr_exec:s0
 /vendor/bin/storageproxyd                                                   u:object_r:tee_exec:s0
 /vendor/bin/init\.radio\.sh                                                 u:object_r:init_radio_exec:s0
@@ -191,7 +190,6 @@
 # Persist
 /mnt/vendor/persist/battery(/.*)?                                           u:object_r:persist_battery_file:s0
 /mnt/vendor/persist/camera(/.*)?                                            u:object_r:persist_camera_file:s0
-/mnt/vendor/persist/modem(/.*)?                                             u:object_r:persist_modem_file:s0
 /mnt/vendor/persist/sensors/registry(/.*)?                                  u:object_r:persist_sensor_reg_file:s0
 /mnt/vendor/persist/ss(/.*)?                                                u:object_r:persist_ss_file:s0
 /mnt/vendor/persist/uwb(/.*)?                                               u:object_r:persist_uwb_file:s0
