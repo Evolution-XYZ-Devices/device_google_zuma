@@ -32,7 +32,6 @@
 /vendor/bin/hw/vendor\.google\.wireless_charger@1\.3-service-vendor         u:object_r:hal_wlc_exec:s0
 /vendor/bin/hw/android\.hardware\.usb-service                               u:object_r:hal_usb_impl_exec:s0
 /vendor/bin/hw/android\.hardware\.usb\.gadget-service                       u:object_r:hal_usb_gadget_impl_exec:s0
-/vendor/bin/hw/rild_exynos                                                  u:object_r:rild_exec:s0
 /vendor/bin/hw/android\.hardware\.qorvo\.uwb\.service                       u:object_r:hal_uwb_vendor_default_exec:s0
 /vendor/bin/rlsservice                                                      u:object_r:rlsservice_exec:s0
 /vendor/bin/hw/android\.hardware\.gxp\.logging@service-gxp-logging          u:object_r:gxp_logging_exec:s0
@@ -173,7 +172,6 @@
 
 # Data
 /data/vendor/log/hwc(/.*)?                                                  u:object_r:vendor_hwc_log_file:s0
-/data/vendor/rild(/.*)?                                                     u:object_r:rild_vendor_data_file:s0
 /data/vendor/ss(/.*)?                                                       u:object_r:tee_data_file:s0
 /data/nfc(/.*)?                                                             u:object_r:nfc_data_file:s0
 /data/vendor/firmware/wifi(/.*)?                                            u:object_r:updated_wifi_firmware_data_file:s0
