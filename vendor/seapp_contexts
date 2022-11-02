@@ -7,5 +7,8 @@ user=_app seinfo=platform name=com.google.googlecbrs domain=cbrs_setup_app type=
 # Modem Diagnostic System
 user=_app isPrivApp=true seinfo=mds name=com.google.mds domain=modem_diagnostic_app type=app_data_file levelFrom=user
 
+# grilservice
+user=_app isPrivApp=true name=com.google.android.grilservice domain=grilservice_app levelFrom=all
+
 # exynos apps
 user=_app isPrivApp=true name=com.samsung.slsi.telephony.oemril domain=oemrilservice_app levelFrom=all

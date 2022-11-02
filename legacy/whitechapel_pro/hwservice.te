@@ -1,6 +1,3 @@
-# GRIL service
-type hal_radioext_hwservice, hwservice_manager_type;
-
 # WLC
 type hal_wlc_hwservice, hwservice_manager_type;
 

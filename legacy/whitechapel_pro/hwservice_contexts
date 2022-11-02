@@ -4,5 +4,3 @@ vendor.goodix.hardware.biometrics.fingerprint::IGoodixFingerprintDaemon         
 # Wireless charger hal
 vendor.google.wireless_charger::IWirelessCharger                                   u:object_r:hal_wlc_hwservice:s0
 
-# GRIL HAL
-vendor.google.radioext::IRadioExt                                                  u:object_r:hal_radioext_hwservice:s0
