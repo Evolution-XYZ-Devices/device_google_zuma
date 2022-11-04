@@ -12,3 +12,4 @@ user=_app isPrivApp=true name=com.google.android.grilservice domain=grilservice_
 
 # exynos apps
 user=_app isPrivApp=true name=com.samsung.slsi.telephony.oemril domain=oemrilservice_app levelFrom=all
+user=_app isPrivApp=true name=com.shannon.qualifiednetworksservice domain=vendor_qualifiednetworks_app levelFrom=all
