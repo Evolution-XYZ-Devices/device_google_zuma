@@ -15,3 +15,6 @@ user=_app isPrivApp=true name=com.samsung.slsi.telephony.oemril domain=oemrilser
 user=_app isPrivApp=true name=com.shannon.qualifiednetworksservice domain=vendor_qualifiednetworks_app levelFrom=all
 user=_app isPrivApp=true name=com.shannon.rcsservice domain=vendor_rcs_app levelFrom=all
 user=_app isPrivApp=true name=com.shannon.imsservice domain=vendor_ims_app levelFrom=all
+
+# slsi logging apps
+user=system seinfo=platform name=com.samsung.slsi.telephony.silentlogging:remote domain=vendor_silentlogging_remote_app levelFrom=all
