@@ -1,8 +1,3 @@
-# Samsung S.LSI IMS
-user=_app isPrivApp=true name=com.shannon.imsservice domain=vendor_ims_app levelFrom=all
-user=_app isPrivApp=true name=com.shannon.rcsservice domain=vendor_rcs_app levelFrom=all
-user=_app isPrivApp=true name=com.shannon.rcsservice:shannonrcsservice domain=vendor_rcs_service_app levelFrom=all
-
 # Samsung S.LSI telephony
 user=system seinfo=platform name=com.samsung.slsi.telephony.silentlogging domain=vendor_telephony_silentlogging_app levelFrom=all
 user=system seinfo=platform name=com.samsung.slsi.telephony.silentlogging:remote domain=vendor_silentlogging_remote_app levelFrom=all
