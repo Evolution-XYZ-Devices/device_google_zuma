@@ -1,8 +1,3 @@
-# Samsung S.LSI telephony
-user=system seinfo=platform name=com.samsung.slsi.telephony.testmode domain=vendor_telephony_test_app levelFrom=all
-user=system seinfo=platform name=com.samsung.slsi.telephony.uartswitch domain=vendor_telephony_uartswitch_app levelFrom=all
-user=system seinfo=platform name=com.samsung.slsi.telephony.networktestmode domain=vendor_telephony_network_test_app levelFrom=all
-
 # coredump/ramdump
 user=_app seinfo=platform name=com.android.ramdump domain=ramdump_app type=app_data_file levelFrom=all
 
