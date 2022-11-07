@@ -1,4 +1,5 @@
 # Binaries
+/vendor/bin/sced                                                            u:object_r:sced_exec:s0
 /vendor/bin/rfsd                                                            u:object_r:rfsd_exec:s0
 /vendor/bin/modem_logging_control                                           u:object_r:modem_logging_control_exec:s0
 /vendor/bin/modem_svc_sit                                                   u:object_r:modem_svc_sit_exec:s0
