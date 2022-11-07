@@ -5,6 +5,7 @@
 /vendor/bin/modem_svc_sit                                                   u:object_r:modem_svc_sit_exec:s0
 /vendor/bin/cbd                                                             u:object_r:cbd_exec:s0
 /vendor/bin/hw/rild_exynos                                                  u:object_r:rild_exec:s0
+/vendor/bin/hw/android\.hardware\.health-service\.zuma                      u:object_r:hal_health_default_exec:s0
 
 # Data
 /data/vendor/log/rfsd(/.*)?                                                 u:object_r:vendor_rfsd_log_file:s0
