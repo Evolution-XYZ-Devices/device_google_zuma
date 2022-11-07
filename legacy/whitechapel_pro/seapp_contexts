@@ -1,5 +1,4 @@
 # Samsung S.LSI telephony
-user=system seinfo=platform name=com.samsung.slsi.telephony.silentlogging domain=vendor_telephony_silentlogging_app levelFrom=all
 user=system seinfo=platform name=com.samsung.slsi.telephony.testmode domain=vendor_telephony_test_app levelFrom=all
 user=system seinfo=platform name=com.samsung.slsi.telephony.uartswitch domain=vendor_telephony_uartswitch_app levelFrom=all
 user=system seinfo=platform name=com.samsung.slsi.telephony.networktestmode domain=vendor_telephony_network_test_app levelFrom=all
