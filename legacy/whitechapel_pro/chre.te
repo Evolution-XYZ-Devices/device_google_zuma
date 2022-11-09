@@ -19,3 +19,6 @@ usf_low_latency_transport(chre)
 allow chre hal_wifi_ext:binder { call transfer };
 allow chre hal_wifi_ext_hwservice:hwservice_manager find;
 allow chre hal_wifi_ext_service:service_manager find;
+
+# Allow CHRE to block suspend, which is required to use EPOLLWAKEUP.
+allow chre self:global_capability2_class_set block_suspend;
