@@ -1,5 +1,6 @@
 # sepolicy that are shared among devices using whitechapel
 BOARD_SEPOLICY_DIRS += device/google/zuma-sepolicy/vendor
+BOARD_SEPOLICY_DIRS += device/google/zuma-sepolicy/radio
 
 # unresolved SELinux error log with bug tracking
 BOARD_SEPOLICY_DIRS += device/google/zuma-sepolicy/tracking_denials
