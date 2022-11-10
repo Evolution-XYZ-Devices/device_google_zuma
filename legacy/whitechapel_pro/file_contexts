@@ -1,6 +1,5 @@
 # Binaries
 /vendor/bin/chre                                                            u:object_r:chre_exec:s0
-/vendor/bin/bipchmgr                                                        u:object_r:bipchmgr_exec:s0
 /vendor/bin/storageproxyd                                                   u:object_r:tee_exec:s0
 /vendor/bin/init\.radio\.sh                                                 u:object_r:init_radio_exec:s0
 /vendor/bin/tcpdump_logger                                                  u:object_r:tcpdump_logger_exec:s0

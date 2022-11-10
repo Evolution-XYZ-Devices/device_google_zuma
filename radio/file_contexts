@@ -1,4 +1,5 @@
 # Binaries
+/vendor/bin/bipchmgr                                                        u:object_r:bipchmgr_exec:s0
 /vendor/bin/vcd                                                             u:object_r:vcd_exec:s0
 /vendor/bin/dmd                                                             u:object_r:dmd_exec:s0
 /vendor/bin/sced                                                            u:object_r:sced_exec:s0
