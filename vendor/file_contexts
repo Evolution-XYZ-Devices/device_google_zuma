@@ -1,3 +1,6 @@
 # Vendor Firmwares
 /vendor/firmware(/.*)?                                                      u:object_r:vendor_fw_file:s0
 
+# Devices
+/dev/edgetpu-soc                                                            u:object_r:edgetpu_device:s0
+

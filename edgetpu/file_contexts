@@ -1,2 +1,0 @@
-# EdgeTPU device (DarwiNN)
-/dev/edgetpu-soc                      u:object_r:edgetpu_device:s0
