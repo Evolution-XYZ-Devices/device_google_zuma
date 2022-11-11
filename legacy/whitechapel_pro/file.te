@@ -10,6 +10,7 @@ type per_boot_file, file_type, data_file_type, core_data_file_type;
 type uwb_vendor_data_file, file_type, data_file_type, app_data_file_type;
 type uwb_data_vendor, file_type, data_file_type;
 type powerstats_vendor_data_file, file_type, data_file_type;
+type sensor_debug_data_file, file_type, data_file_type;
 userdebug_or_eng(`
   typeattribute tcpdump_vendor_data_file mlstrustedobject;
 ')
@@ -58,8 +59,6 @@ type chre_socket, file_type;
 type proc_f2fs, proc_type, fs_type;
 
 # Vendor tools
-type vendor_usf_stats, vendor_file_type, file_type;
-type vendor_usf_reg_edit, vendor_file_type, file_type;
 type vendor_dumpsys, vendor_file_type, file_type;
 
 # SecureElement
