@@ -8,3 +8,6 @@ vendor_internal_prop(vendor_rild_prop)
 vendor_internal_prop(vendor_ssrdump_prop)
 vendor_internal_prop(vendor_wifi_version)
 vendor_internal_prop(vendor_imssvc_prop)
+
+# Telephony debug app
+vendor_internal_prop(vendor_telephony_app_prop)
