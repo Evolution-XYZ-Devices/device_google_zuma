@@ -25,3 +25,6 @@ user=system seinfo=platform name=com.samsung.slsi.telephony.testmode domain=vend
 # Samsung S.LSI engineer mode
 user=_app seinfo=platform name=com.samsung.slsi.engineermode domain=vendor_engineermode_app levelFrom=all
 
+# Domain for CatEngineService
+user=system seinfo=platform name=com.google.android.CatEngine domain=cat_engine_service_app type=system_app_data_file levelFrom=all
+
