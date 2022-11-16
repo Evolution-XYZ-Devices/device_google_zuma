@@ -1,0 +1,6 @@
+# b/259302023
+dontaudit hal_dumpstate_default file_type:file *;
+dontaudit hal_dumpstate_default fs_type:file *;
+dontaudit hal_dumpstate_default file_type:dir *;
+dontaudit hal_dumpstate_default fs_type:dir *;
+dontaudit hal_dumpstate_default property_type:file *;
