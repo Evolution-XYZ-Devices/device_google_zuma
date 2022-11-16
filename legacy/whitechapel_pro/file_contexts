@@ -16,7 +16,6 @@
 /vendor/bin/hw/samsung\.hardware\.media\.c2@1\.2-service                    u:object_r:mediacodec_samsung_exec:s0
 /vendor/bin/hw/google\.hardware\.media\.c2@2\.0-service                     u:object_r:mediacodec_google_exec:s0
 /vendor/bin/hw/android\.hardware\.secure_element@1\.2-service-gto           u:object_r:hal_secure_element_st54spi_exec:s0
-/vendor/bin/hw/android\.hardware\.secure_element@1\.2-service-gto-ese2      u:object_r:hal_secure_element_st33spi_exec:s0
 /vendor/bin/hw/android\.hardware\.secure_element@1\.2-uicc-service          u:object_r:hal_secure_element_uicc_exec:s0
 /vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.goodix  u:object_r:hal_fingerprint_default_exec:s0
 /vendor/bin/hw/android\.hardware\.biometrics\.fingerprint-service\.goodix   u:object_r:hal_fingerprint_default_exec:s0
