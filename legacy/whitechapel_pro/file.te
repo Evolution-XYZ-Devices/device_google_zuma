@@ -68,5 +68,3 @@ typeattribute sysfs_st33spi mlstrustedobject;
 # USB-C throttling stats
 type sysfs_usbc_throttling_stats, sysfs_type, fs_type;
 
-# Touch
-type proc_touch, proc_type, fs_type;
