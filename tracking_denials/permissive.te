@@ -1,3 +1,4 @@
 userdebug_or_eng(`
   permissive pixelstats_vendor;
+  permissive logger_app;
 ')
