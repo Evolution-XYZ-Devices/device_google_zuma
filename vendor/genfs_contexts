@@ -1,6 +1,23 @@
 # EdgeTPU
 genfscon sysfs /devices/platform/1ce00000.rio                                                                             u:object_r:sysfs_edgetpu:s0
 
+# Storage
+genfscon sysfs /devices/platform/13200000.ufs/slowio_read_cnt           u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/platform/13200000.ufs/slowio_write_cnt          u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/platform/13200000.ufs/slowio_unmap_cnt          u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/platform/13200000.ufs/slowio_sync_cnt           u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/platform/13200000.ufs/manual_gc                 u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/platform/13200000.ufs/io_stats                  u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/platform/13200000.ufs/req_stats                 u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/platform/13200000.ufs/err_stats                 u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/platform/13200000.ufs/device_descriptor         u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/platform/13200000.ufs/clkgate_enable            u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/platform/13200000.ufs/hibern8_on_idle_enable    u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/platform/13200000.ufs/health_descriptor         u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/platform/13200000.ufs/host0/target0:0:0/0:0:0:  u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/platform/13200000.ufs/ufs_stats                 u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/platform/13200000.ufs/attributes/wb_avail_buf   u:object_r:sysfs_scsi_devices_0000:s0
+
 # wake up nodes
 genfscon sysfs /devices/platform/10c80000.hsi2c/i2c-0/6-0008/wakeup/wakeup                                                u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/10c90000.hsi2c/i2c-0/7-003c/power_supply/wireless/wakeup                                 u:object_r:sysfs_wakeup:s0
