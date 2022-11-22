@@ -51,3 +51,5 @@ ro.vendor.uwb.calibration.                 u:object_r:vendor_uwb_calibration_pro
 # Dynamic sensor
 vendor.dynamic_sensor.                     u:object_r:vendor_dynamic_sensor_prop:s0
 
+# Trusty
+ro.vendor.trusty.storage.fs_ready          u:object_r:vendor_trusty_storage_prop:s0
