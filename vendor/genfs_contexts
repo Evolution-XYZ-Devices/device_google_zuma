@@ -27,6 +27,9 @@ genfscon sysfs /devices/platform/13200000.ufs/health_descriptor         u:object
 genfscon sysfs /devices/platform/13200000.ufs/host0/target0:0:0/0:0:0:  u:object_r:sysfs_scsi_devices_0000:s0
 genfscon sysfs /devices/platform/13200000.ufs/ufs_stats                 u:object_r:sysfs_scsi_devices_0000:s0
 genfscon sysfs /devices/platform/13200000.ufs/attributes/wb_avail_buf   u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/platform/13200000.ufs/vendor                    u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/platform/13200000.ufs/model                     u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/platform/13200000.ufs/rev                       u:object_r:sysfs_scsi_devices_0000:s0
 
 # Display
 genfscon sysfs /devices/platform/19440000.drmdsim/19440000.drmdsim.0/gamma                                u:object_r:sysfs_display:s0
