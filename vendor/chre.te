@@ -1,0 +1,4 @@
+type chre, domain;
+type chre_exec, vendor_file_type, exec_type, file_type;
+init_daemon_domain(chre)
+

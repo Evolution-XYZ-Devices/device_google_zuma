@@ -2,4 +2,10 @@ userdebug_or_eng(`
   permissive pixelstats_vendor;
   permissive logger_app;
   permissive fastbootd;
+  permissive audioserver;
+  permissive hal_bluetooth_btlinux;
+  permissive bootdevice_sysdev;
+  permissive charger_vendor;
+  permissive chre;
+  permissive kernel;
 ')
