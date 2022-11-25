@@ -1,0 +1,3 @@
+# b/260366321
+dontaudit shell property_type:file *;
+

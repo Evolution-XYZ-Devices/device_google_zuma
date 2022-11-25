@@ -1,0 +1,4 @@
+# b/260366029
+dontaudit hal_camera_default device:chr_file { ioctl };
+dontaudit hal_camera_default device:chr_file { open };
+dontaudit hal_camera_default device:chr_file { read };

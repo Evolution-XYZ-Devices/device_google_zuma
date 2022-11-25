@@ -1,0 +1,6 @@
+# b/260366281
+dontaudit priv_app privapp_data_file:dir { getattr };
+dontaudit priv_app privapp_data_file:dir { search };
+dontaudit priv_app vendor_default_prop:file { getattr };
+dontaudit priv_app vendor_default_prop:file { map };
+dontaudit priv_app vendor_default_prop:file { open };

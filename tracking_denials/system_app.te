@@ -1,0 +1,3 @@
+# b/260363384
+dontaudit system_app hal_wlc:binder { call };
+dontaudit system_app hal_wlc_hwservice:hwservice_manager { find };

@@ -1,0 +1,4 @@
+# b/260366030
+dontaudit system_server sysfs:file { getattr };
+dontaudit system_server sysfs:file { open };
+dontaudit system_server sysfs:file { read };

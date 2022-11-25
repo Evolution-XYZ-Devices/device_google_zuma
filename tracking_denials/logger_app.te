@@ -1,0 +1,6 @@
+# b/260366439
+dontaudit logger_app radio_vendor_data_file:dir { search };
+dontaudit logger_app vendor_ssrdump_prop:file { getattr };
+dontaudit logger_app vendor_ssrdump_prop:file { map };
+dontaudit logger_app vendor_ssrdump_prop:file { open };
+dontaudit logger_app vendor_ssrdump_prop:file { read };

@@ -1,0 +1,5 @@
+# b/260366344
+dontaudit rlsservice vendor_camera_prop:file { getattr };
+dontaudit rlsservice vendor_camera_prop:file { map };
+dontaudit rlsservice vendor_camera_prop:file { open };
+dontaudit rlsservice vendor_camera_prop:file { read };

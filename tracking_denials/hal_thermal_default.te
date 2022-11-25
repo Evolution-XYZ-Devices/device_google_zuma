@@ -1,0 +1,4 @@
+# b/260366399
+dontaudit hal_thermal_default sysfs:file { getattr };
+dontaudit hal_thermal_default sysfs:file { open };
+dontaudit hal_thermal_default sysfs:file { read };

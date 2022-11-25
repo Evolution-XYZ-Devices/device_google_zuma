@@ -1,0 +1,4 @@
+# b/260366279
+dontaudit edgetpu_logging sysfs:file { getattr };
+dontaudit edgetpu_logging sysfs:file { open };
+dontaudit edgetpu_logging sysfs:file { read };
