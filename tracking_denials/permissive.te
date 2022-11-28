@@ -8,4 +8,15 @@ userdebug_or_eng(`
   permissive charger_vendor;
   permissive chre;
   permissive kernel;
+  permissive bootanim;
+  permissive hal_graphics_allocator_default;
+  permissive hal_graphics_composer_default;
+  permissive hal_health_storage_default;
+  permissive hal_nfc_default;
+  permissive hal_power_stats_default;
+  permissive hal_fingerprint_default;
+  permissive gxp_logging;
+  permissive hal_contexthub_default;
+  permissive hal_sensors_default;
+  permissive recovery;
 ')

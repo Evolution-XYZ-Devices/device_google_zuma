@@ -23,7 +23,6 @@
 /vendor/bin/hw/android\.hardware\.usb\.gadget-service                       u:object_r:hal_usb_gadget_impl_exec:s0
 /vendor/bin/hw/android\.hardware\.qorvo\.uwb\.service                       u:object_r:hal_uwb_vendor_default_exec:s0
 /vendor/bin/rlsservice                                                      u:object_r:rlsservice_exec:s0
-/vendor/bin/hw/android\.hardware\.gxp\.logging@service-gxp-logging          u:object_r:gxp_logging_exec:s0
 
 # Vendor Firmwares
 /vendor/firmware/mali_csffw\.bin                                            u:object_r:same_process_hal_file:s0
