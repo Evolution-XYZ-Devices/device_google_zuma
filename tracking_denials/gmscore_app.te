@@ -2,3 +2,5 @@
 dontaudit gmscore_app property_type:file *;
 # b/260365725
 dontaudit gmscore_app property_type:file *;
+# b/260522434
+dontaudit gmscore_app modem_img_file:filesystem { getattr };

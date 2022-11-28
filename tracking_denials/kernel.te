@@ -1,0 +1,8 @@
+# b/260522245
+dontaudit kernel per_boot_file:file { read };
+dontaudit kernel same_process_hal_file:file { open };
+dontaudit kernel same_process_hal_file:file { read };
+dontaudit kernel vendor_fw_file:dir { search };
+dontaudit kernel vendor_fw_file:file { open };
+dontaudit kernel vendor_fw_file:file { read };
+dontaudit kernel vendor_regmap_debugfs:dir { search };

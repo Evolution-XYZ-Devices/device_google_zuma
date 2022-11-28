@@ -1,0 +1,2 @@
+# b/260522203
+dontaudit zygote euiccpixel_app:process { dyntransition };

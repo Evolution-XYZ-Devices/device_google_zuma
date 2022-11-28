@@ -1,0 +1,7 @@
+# b/260522435
+dontaudit chre aoc_device:chr_file { getattr };
+dontaudit chre aoc_device:chr_file { open };
+dontaudit chre aoc_device:chr_file { read write };
+dontaudit chre chre:capability2 { block_suspend };
+dontaudit chre device:dir { read };
+dontaudit chre device:dir { watch };

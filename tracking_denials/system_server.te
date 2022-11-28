@@ -2,3 +2,7 @@
 dontaudit system_server sysfs:file { getattr };
 dontaudit system_server sysfs:file { open };
 dontaudit system_server sysfs:file { read };
+# b/260522040
+dontaudit system_server euiccpixel_app:binder { call };
+dontaudit system_server euiccpixel_app:binder { transfer };
+dontaudit system_server euiccpixel_app:process { setsched };

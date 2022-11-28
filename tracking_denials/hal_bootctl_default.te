@@ -1,0 +1,3 @@
+# b/260522436
+dontaudit hal_bootctl_default devinfo_block_device:blk_file { open };
+dontaudit hal_bootctl_default devinfo_block_device:blk_file { read };
