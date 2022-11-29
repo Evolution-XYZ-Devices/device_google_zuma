@@ -1,0 +1,2 @@
+# b/260768672
+dontaudit secure_element euiccpixel_app:binder { transfer };

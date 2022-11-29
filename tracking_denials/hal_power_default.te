@@ -8,3 +8,5 @@ dontaudit hal_power_default sysfs_display:file { write };
 dontaudit hal_power_default sysfs_fabric:file { open };
 dontaudit hal_power_default sysfs_fabric:file { write };
 dontaudit hal_power_default vendor_camera_prop:property_service { set };
+# b/260769063
+dontaudit hal_power_default hal_graphics_composer_default:binder { transfer };

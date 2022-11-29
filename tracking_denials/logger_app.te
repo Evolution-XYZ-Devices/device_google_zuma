@@ -13,3 +13,10 @@ dontaudit logger_app vendor_modem_prop:file { getattr };
 dontaudit logger_app vendor_modem_prop:file { map };
 dontaudit logger_app vendor_modem_prop:file { open };
 dontaudit logger_app vendor_modem_prop:file { read };
+# b/260769144
+dontaudit logger_app radio_vendor_data_file:dir { add_name };
+dontaudit logger_app radio_vendor_data_file:dir { remove_name };
+dontaudit logger_app radio_vendor_data_file:dir { write };
+dontaudit logger_app radio_vendor_data_file:file { create };
+dontaudit logger_app radio_vendor_data_file:file { unlink };
+dontaudit logger_app radio_vendor_data_file:file { write open };

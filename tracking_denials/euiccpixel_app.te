@@ -35,3 +35,8 @@ dontaudit euiccpixel_app tmpfs:file { read };
 dontaudit euiccpixel_app tmpfs:file { write };
 dontaudit euiccpixel_app user_profile_data_file:dir { search };
 dontaudit euiccpixel_app user_profile_data_file:file { getattr };
+# b/260769064
+dontaudit euiccpixel_app priv_app:binder { call };
+dontaudit euiccpixel_app priv_app:binder { transfer };
+dontaudit euiccpixel_app secure_element:binder { call };
+dontaudit euiccpixel_app secure_element:binder { transfer };
