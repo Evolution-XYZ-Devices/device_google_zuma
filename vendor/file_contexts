@@ -43,4 +43,19 @@
 /dev/block/platform/13200000\.ufs/by-name/vbmeta_vendor_[ab]                u:object_r:custom_ab_block_device:s0
 /dev/block/platform/13200000\.ufs/by-name/vendor_boot_[ab]                  u:object_r:custom_ab_block_device:s0
 /dev/block/platform/13200000\.ufs/by-name/vendor_kernel_boot_[ab]           u:object_r:custom_ab_block_device:s0
-
+/dev/logbuffer_usbpd                                                        u:object_r:logbuffer_device:s0
+/dev/logbuffer_ssoc                                                         u:object_r:logbuffer_device:s0
+/dev/logbuffer_wireless                                                     u:object_r:logbuffer_device:s0
+/dev/logbuffer_ttf                                                          u:object_r:logbuffer_device:s0
+/dev/logbuffer_maxq                                                         u:object_r:logbuffer_device:s0
+/dev/logbuffer_rtx                                                          u:object_r:logbuffer_device:s0
+/dev/logbuffer_maxfg                                                        u:object_r:logbuffer_device:s0
+/dev/logbuffer_maxfg_base                                                   u:object_r:logbuffer_device:s0
+/dev/logbuffer_maxfg_flip                                                   u:object_r:logbuffer_device:s0
+/dev/logbuffer_pca9468_tcpm                                                 u:object_r:logbuffer_device:s0
+/dev/logbuffer_pca9468                                                      u:object_r:logbuffer_device:s0
+/dev/logbuffer_cpm                                                          u:object_r:logbuffer_device:s0
+/dev/logbuffer_maxfg_monitor                                                u:object_r:logbuffer_device:s0
+/dev/logbuffer_maxfg_base_monitor                                           u:object_r:logbuffer_device:s0
+/dev/logbuffer_maxfg_flip_monitor                                           u:object_r:logbuffer_device:s0
+/dev/logbuffer_wc68                                                         u:object_r:logbuffer_device:s0
