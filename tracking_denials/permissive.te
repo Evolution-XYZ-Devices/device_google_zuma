@@ -12,7 +12,6 @@ userdebug_or_eng(`
   permissive hal_graphics_allocator_default;
   permissive hal_graphics_composer_default;
   permissive hal_health_storage_default;
-  permissive hal_nfc_default;
   permissive hal_power_stats_default;
   permissive hal_fingerprint_default;
   permissive gxp_logging;
