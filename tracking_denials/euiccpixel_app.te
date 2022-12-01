@@ -40,3 +40,10 @@ dontaudit euiccpixel_app priv_app:binder { call };
 dontaudit euiccpixel_app priv_app:binder { transfer };
 dontaudit euiccpixel_app secure_element:binder { call };
 dontaudit euiccpixel_app secure_element:binder { transfer };
+# b/260922186
+dontaudit euiccpixel_app init:unix_stream_socket { connectto };
+dontaudit euiccpixel_app priv_app:binder { call };
+dontaudit euiccpixel_app priv_app:binder { transfer };
+dontaudit euiccpixel_app property_socket:sock_file { write };
+dontaudit euiccpixel_app secure_element:binder { call };
+dontaudit euiccpixel_app secure_element:binder { transfer };

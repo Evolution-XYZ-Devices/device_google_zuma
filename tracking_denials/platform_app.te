@@ -1,2 +1,4 @@
 # b/260768402
 dontaudit platform_app default_android_service:service_manager { find };
+# b/260922162
+dontaudit platform_app default_android_service:service_manager { find };

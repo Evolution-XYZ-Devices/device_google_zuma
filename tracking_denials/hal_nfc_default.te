@@ -3,3 +3,8 @@ dontaudit hal_nfc_default vendor_nfc_prop:file { getattr };
 dontaudit hal_nfc_default vendor_nfc_prop:file { map };
 dontaudit hal_nfc_default vendor_nfc_prop:file { open };
 dontaudit hal_nfc_default vendor_nfc_prop:file { read };
+# b/260921340
+dontaudit hal_nfc_default vendor_nfc_prop:file { getattr };
+dontaudit hal_nfc_default vendor_nfc_prop:file { map };
+dontaudit hal_nfc_default vendor_nfc_prop:file { open };
+dontaudit hal_nfc_default vendor_nfc_prop:file { read };

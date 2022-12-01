@@ -13,3 +13,14 @@ dontaudit hal_power_stats_default sysfs_iio_devices:dir { search };
 dontaudit hal_power_stats_default sysfs_leds:dir { search };
 dontaudit hal_power_stats_default sysfs_leds:file { open };
 dontaudit hal_power_stats_default sysfs_leds:file { read };
+# b/260922184
+dontaudit hal_power_stats_default powerstats_vendor_data_file:dir { search };
+dontaudit hal_power_stats_default sysfs_cpu:file { getattr };
+dontaudit hal_power_stats_default sysfs_cpu:file { open };
+dontaudit hal_power_stats_default sysfs_cpu:file { read };
+dontaudit hal_power_stats_default sysfs_iio_devices:dir { open };
+dontaudit hal_power_stats_default sysfs_iio_devices:dir { read };
+dontaudit hal_power_stats_default sysfs_iio_devices:dir { search };
+dontaudit hal_power_stats_default sysfs_leds:dir { search };
+dontaudit hal_power_stats_default sysfs_leds:file { open };
+dontaudit hal_power_stats_default sysfs_leds:file { read };
