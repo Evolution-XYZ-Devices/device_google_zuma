@@ -1,0 +1,2 @@
+# allow HWC to output to dumpstate via pipe fd
+dump_hal(hal_graphics_composer)

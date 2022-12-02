@@ -1,0 +1,40 @@
+# allow HWC to access power hal
+hal_client_domain(hal_graphics_composer_default, hal_power)
+
+# access sysfs R/W
+allow hal_graphics_composer_default sysfs_display:dir search;
+allow hal_graphics_composer_default sysfs_display:file rw_file_perms;
+
+# allow HWC to r/w backlight
+allow hal_graphics_composer_default sysfs_leds:dir r_dir_perms;
+allow hal_graphics_composer_default sysfs_leds:file rw_file_perms;
+
+# socket / vnd service
+allow hal_graphics_composer_default self:netlink_kobject_uevent_socket create_socket_perms_no_ioctl;
+vndbinder_use(hal_graphics_composer_default)
+
+# boot stauts prop
+get_prop(hal_graphics_composer_default, boot_status_prop);
+
+# allow HWC to get device_config_surface_flinger_native_boot_prop for adpf flags
+get_prop(hal_graphics_composer_default, device_config_surface_flinger_native_boot_prop)
+
+add_service(hal_graphics_composer_default, hal_pixel_display_service)
+
+# allow HWC/libdisplaycolor to read calibration data
+allow hal_graphics_composer_default mnt_vendor_file:dir search;
+allow hal_graphics_composer_default persist_file:dir search;
+allow hal_graphics_composer_default persist_display_file:file r_file_perms;
+allow hal_graphics_composer_default persist_display_file:dir search;
+
+# allow HWC to get/set vendor_display_prop
+set_prop(hal_graphics_composer_default, vendor_display_prop)
+
+# allow HWC to access vendor_displaycolor_service
+add_service(hal_graphics_composer_default, vendor_displaycolor_service)
+
+add_service(hal_graphics_composer_default, vendor_surfaceflinger_vndservice)
+
+# allow HWC to output to dumpstate via pipe fd
+allow hal_graphics_composer_default hal_dumpstate_default:fifo_file { append write };
+allow hal_graphics_composer_default hal_dumpstate_default:fd use;
