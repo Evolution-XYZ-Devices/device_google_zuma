@@ -24,3 +24,8 @@ dontaudit hal_power_stats_default sysfs_iio_devices:dir { search };
 dontaudit hal_power_stats_default sysfs_leds:dir { search };
 dontaudit hal_power_stats_default sysfs_leds:file { open };
 dontaudit hal_power_stats_default sysfs_leds:file { read };
+# b/261105152
+dontaudit hal_power_stats_default sysfs_aoc:dir { search };
+dontaudit hal_power_stats_default sysfs_aoc:file { getattr };
+dontaudit hal_power_stats_default sysfs_aoc:file { open };
+dontaudit hal_power_stats_default sysfs_aoc:file { read };

@@ -1,2 +1,9 @@
 # b/260522279
 dontaudit bootanim system_data_file:dir { search };
+# b/261105374
+dontaudit bootanim default_android_service:service_manager { find };
+dontaudit bootanim vendor_file:file { execute };
+dontaudit bootanim vendor_file:file { getattr };
+dontaudit bootanim vendor_file:file { map };
+dontaudit bootanim vendor_file:file { open };
+dontaudit bootanim vendor_file:file { read };

@@ -9,3 +9,5 @@ dontaudit system_suspend_server sysfs_aoc:dir { read };
 dontaudit system_suspend_server sysfs_aoc:file { getattr };
 dontaudit system_suspend_server sysfs_aoc:file { open };
 dontaudit system_suspend_server sysfs_aoc:file { read };
+# b/261105356
+dontaudit system_suspend_server chre:binder { transfer };

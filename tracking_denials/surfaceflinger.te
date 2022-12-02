@@ -1,0 +1,7 @@
+# b/261105092
+dontaudit surfaceflinger default_android_service:service_manager { find };
+dontaudit surfaceflinger vendor_file:file { execute };
+dontaudit surfaceflinger vendor_file:file { getattr };
+dontaudit surfaceflinger vendor_file:file { map };
+dontaudit surfaceflinger vendor_file:file { open };
+dontaudit surfaceflinger vendor_file:file { read };
