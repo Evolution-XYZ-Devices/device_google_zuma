@@ -29,3 +29,5 @@ dontaudit hal_power_stats_default sysfs_aoc:dir { search };
 dontaudit hal_power_stats_default sysfs_aoc:file { getattr };
 dontaudit hal_power_stats_default sysfs_aoc:file { open };
 dontaudit hal_power_stats_default sysfs_aoc:file { read };
+# b/261363958
+dontaudit hal_power_stats_default default_android_service:service_manager { add };
