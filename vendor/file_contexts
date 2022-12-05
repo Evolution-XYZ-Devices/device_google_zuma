@@ -26,6 +26,7 @@
 /dev/block/platform/13200000\.ufs/by-name/dram_train_[ab]                   u:object_r:custom_ab_block_device:s0
 /dev/block/platform/13200000\.ufs/by-name/dtbo_[ab]                         u:object_r:custom_ab_block_device:s0
 /dev/block/platform/13200000\.ufs/by-name/frp                               u:object_r:frp_block_device:s0
+/dev/block/platform/13200000\.ufs/by-name/gsa_bl1_[ab]                      u:object_r:custom_ab_block_device:s0
 /dev/block/platform/13200000\.ufs/by-name/gsa_[ab]                          u:object_r:custom_ab_block_device:s0
 /dev/block/platform/13200000\.ufs/by-name/ldfw_[ab]                         u:object_r:custom_ab_block_device:s0
 /dev/block/platform/13200000\.ufs/by-name/metadata                          u:object_r:metadata_block_device:s0
