@@ -1,14 +1,8 @@
 # coredump/ramdump
 user=_app seinfo=platform name=com.android.ramdump domain=ramdump_app type=app_data_file levelFrom=all
 
-# Domain for OFLBasicAgentApp to support NFC/eSIM fw upgrade
-user=_app isPrivApp=true  seinfo=platform name=com.thales.device.ofl.app.basicagent domain=ofl_app type=app_data_file levelFrom=user
-
 # HbmSVManager
 user=_app seinfo=platform name=com.android.hbmsvmanager domain=hbmsvmanager_app type=app_data_file levelFrom=all
-
-# Domain for connectivity monitor
-user=_app isPrivApp=true seinfo=platform name=com.google.android.connectivitymonitor domain=con_monitor_app type=app_data_file levelFrom=all
 
 # Qorvo UWB system app
 # TODO(b/222204912): Should this run under uwb user?
