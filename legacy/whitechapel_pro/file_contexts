@@ -99,8 +99,6 @@
 /dev/trusty-ipc-dev0                                                        u:object_r:tee_device:s0
 /dev/sg1                                                                    u:object_r:sg_device:s0
 /dev/st21nfc                                                                u:object_r:nfc_device:s0
-/dev/st54spi                                                                u:object_r:st54spi_device:s0
-/dev/st33spi                                                                u:object_r:st33spi_device:s0
 /dev/logbuffer_tcpm                                                         u:object_r:logbuffer_device:s0
 /dev/sys/block/bootdevice(/.*)?                                             u:object_r:bootdevice_sysdev:s0
 /dev/socket/chre                                                            u:object_r:chre_socket:s0

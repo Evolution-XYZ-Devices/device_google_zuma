@@ -63,3 +63,4 @@
 /dev/logbuffer_maxfg_base_monitor                                           u:object_r:logbuffer_device:s0
 /dev/logbuffer_maxfg_flip_monitor                                           u:object_r:logbuffer_device:s0
 /dev/logbuffer_wc68                                                         u:object_r:logbuffer_device:s0
+/dev/st54spi                                                                u:object_r:st54spi_device:s0

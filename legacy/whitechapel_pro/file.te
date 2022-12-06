@@ -60,10 +60,6 @@ type proc_f2fs, proc_type, fs_type;
 # Vendor tools
 type vendor_dumpsys, vendor_file_type, file_type;
 
-# SecureElement
-type sysfs_st33spi, sysfs_type, fs_type;
-typeattribute sysfs_st33spi mlstrustedobject;
-
 # USB-C throttling stats
 type sysfs_usbc_throttling_stats, sysfs_type, fs_type;
 
