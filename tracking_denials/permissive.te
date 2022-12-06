@@ -21,4 +21,9 @@ userdebug_or_eng(`
   permissive con_monitor_app;
   permissive hal_secure_element_st54spi;
   permissive ofl_app;
+  permissive hal_thermal_default;
+  permissive hal_secure_element_uicc;
+  permissive hal_usb_gadget_impl;
+  permissive hal_usb_impl;
+  permissive hal_camera_default;
 ')
