@@ -20,3 +20,13 @@ dontaudit logger_app radio_vendor_data_file:dir { write };
 dontaudit logger_app radio_vendor_data_file:file { create };
 dontaudit logger_app radio_vendor_data_file:file { unlink };
 dontaudit logger_app radio_vendor_data_file:file { write open };
+# b/261519049
+dontaudit logger_app radio_vendor_data_file:dir { create };
+dontaudit logger_app radio_vendor_data_file:dir { rmdir };
+dontaudit logger_app radio_vendor_data_file:file { getattr };
+dontaudit logger_app radio_vendor_data_file:file { setattr };
+dontaudit logger_app vendor_gps_file:dir { getattr };
+dontaudit logger_app vendor_gps_file:dir { read };
+dontaudit logger_app vendor_gps_file:dir { search };
+dontaudit logger_app vendor_gps_prop:property_service { set };
+dontaudit logger_app vendor_logger_prop:property_service { set };

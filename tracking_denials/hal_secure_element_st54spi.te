@@ -1,0 +1,13 @@
+# b/261519145
+dontaudit hal_secure_element_st54spi hwservicemanager:binder { call };
+dontaudit hal_secure_element_st54spi hwservicemanager:binder { transfer };
+dontaudit hal_secure_element_st54spi hwservicemanager_prop:file { getattr };
+dontaudit hal_secure_element_st54spi hwservicemanager_prop:file { map };
+dontaudit hal_secure_element_st54spi hwservicemanager_prop:file { open };
+dontaudit hal_secure_element_st54spi hwservicemanager_prop:file { read };
+dontaudit hal_secure_element_st54spi init:unix_stream_socket { connectto };
+dontaudit hal_secure_element_st54spi property_socket:sock_file { write };
+dontaudit hal_secure_element_st54spi secure_element:binder { call };
+dontaudit hal_secure_element_st54spi st54spi_device:chr_file { open };
+dontaudit hal_secure_element_st54spi st54spi_device:chr_file { read write };
+dontaudit hal_secure_element_st54spi vendor_secure_element_prop:property_service { set };

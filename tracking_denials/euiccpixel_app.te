@@ -47,3 +47,8 @@ dontaudit euiccpixel_app priv_app:binder { transfer };
 dontaudit euiccpixel_app property_socket:sock_file { write };
 dontaudit euiccpixel_app secure_element:binder { call };
 dontaudit euiccpixel_app secure_element:binder { transfer };
+# b/261516808
+dontaudit euiccpixel_app dck_prop:file { getattr };
+dontaudit euiccpixel_app dck_prop:file { open };
+dontaudit euiccpixel_app dck_prop:file { read };
+dontaudit euiccpixel_app vendor_secure_element_prop:property_service { set };

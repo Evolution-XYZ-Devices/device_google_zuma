@@ -2,3 +2,6 @@
 dontaudit secure_element euiccpixel_app:binder { transfer };
 # b/260922187
 dontaudit secure_element euiccpixel_app:binder { transfer };
+# b/261519169
+dontaudit secure_element hal_secure_element_st54spi:binder { call };
+dontaudit secure_element hal_secure_element_st54spi:binder { transfer };

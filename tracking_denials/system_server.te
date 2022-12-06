@@ -6,3 +6,6 @@ dontaudit system_server sysfs:file { read };
 dontaudit system_server euiccpixel_app:binder { call };
 dontaudit system_server euiccpixel_app:binder { transfer };
 dontaudit system_server euiccpixel_app:process { setsched };
+# b/261519050
+dontaudit system_server con_monitor_app:binder { call };
+dontaudit system_server con_monitor_app:binder { transfer };
