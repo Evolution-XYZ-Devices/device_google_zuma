@@ -26,4 +26,7 @@ userdebug_or_eng(`
   permissive hal_usb_gadget_impl;
   permissive hal_usb_impl;
   permissive hal_camera_default;
+  permissive hal_uwb_vendor_default;
+  permissive google_camera_app;
+  permissive hal_uwb_vendor;
 ')
