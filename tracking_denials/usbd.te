@@ -1,0 +1,2 @@
+# b/261650953
+dontaudit usbd hal_usb_gadget_impl:binder { call };

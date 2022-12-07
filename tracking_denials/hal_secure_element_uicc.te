@@ -1,0 +1,7 @@
+# b/261651325
+dontaudit hal_secure_element_uicc hwservicemanager:binder { call };
+dontaudit hal_secure_element_uicc hwservicemanager:binder { transfer };
+dontaudit hal_secure_element_uicc hwservicemanager_prop:file { getattr };
+dontaudit hal_secure_element_uicc hwservicemanager_prop:file { map };
+dontaudit hal_secure_element_uicc hwservicemanager_prop:file { open };
+dontaudit hal_secure_element_uicc hwservicemanager_prop:file { read };

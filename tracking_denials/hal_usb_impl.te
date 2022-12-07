@@ -1,0 +1,25 @@
+# b/261651326
+dontaudit hal_usb_impl hal_thermal_default:binder { call };
+dontaudit hal_usb_impl hal_thermal_default:binder { transfer };
+dontaudit hal_usb_impl hal_usb_impl:capability2 { block_suspend };
+dontaudit hal_usb_impl hal_usb_impl:capability2 { wake_alarm };
+dontaudit hal_usb_impl hal_usb_impl:netlink_kobject_uevent_socket { bind };
+dontaudit hal_usb_impl hal_usb_impl:netlink_kobject_uevent_socket { create };
+dontaudit hal_usb_impl hal_usb_impl:netlink_kobject_uevent_socket { getopt };
+dontaudit hal_usb_impl hal_usb_impl:netlink_kobject_uevent_socket { read };
+dontaudit hal_usb_impl hal_usb_impl:netlink_kobject_uevent_socket { setopt };
+dontaudit hal_usb_impl hal_usb_service:service_manager { add };
+dontaudit hal_usb_impl hwservicemanager:binder { call };
+dontaudit hal_usb_impl hwservicemanager:binder { transfer };
+dontaudit hal_usb_impl hwservicemanager_prop:file { getattr };
+dontaudit hal_usb_impl hwservicemanager_prop:file { map };
+dontaudit hal_usb_impl hwservicemanager_prop:file { open };
+dontaudit hal_usb_impl hwservicemanager_prop:file { read };
+dontaudit hal_usb_impl servicemanager:binder { call };
+dontaudit hal_usb_impl servicemanager:binder { transfer };
+dontaudit hal_usb_impl sysfs:dir { open };
+dontaudit hal_usb_impl sysfs:dir { read };
+dontaudit hal_usb_impl sysfs:file { getattr };
+dontaudit hal_usb_impl sysfs:file { open };
+dontaudit hal_usb_impl sysfs:file { read };
+dontaudit hal_usb_impl system_server:binder { call };

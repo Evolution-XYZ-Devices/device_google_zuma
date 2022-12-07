@@ -2,3 +2,7 @@
 dontaudit hal_thermal_default sysfs:file { getattr };
 dontaudit hal_thermal_default sysfs:file { open };
 dontaudit hal_thermal_default sysfs:file { read };
+# b/261651187
+dontaudit hal_thermal_default sysfs_iio_devices:dir { open };
+dontaudit hal_thermal_default sysfs_iio_devices:dir { read };
+dontaudit hal_thermal_default sysfs_iio_devices:dir { search };

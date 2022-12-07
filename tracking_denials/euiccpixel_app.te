@@ -52,3 +52,5 @@ dontaudit euiccpixel_app dck_prop:file { getattr };
 dontaudit euiccpixel_app dck_prop:file { open };
 dontaudit euiccpixel_app dck_prop:file { read };
 dontaudit euiccpixel_app vendor_secure_element_prop:property_service { set };
+# b/261651113
+dontaudit euiccpixel_app dck_prop:file { map };

@@ -37,3 +37,9 @@ dontaudit hal_power_stats_default sysfs_acpm_stats:file { read };
 dontaudit hal_power_stats_default sysfs_aoc_dumpstate:file { getattr };
 dontaudit hal_power_stats_default sysfs_aoc_dumpstate:file { open };
 dontaudit hal_power_stats_default sysfs_aoc_dumpstate:file { read };
+# b/261651283
+dontaudit hal_power_stats_default device:chr_file { getattr };
+dontaudit hal_power_stats_default device:chr_file { open };
+dontaudit hal_power_stats_default device:chr_file { read };
+dontaudit hal_power_stats_default sysfs_acpm_stats:file { getattr };
+dontaudit hal_power_stats_default sysfs_acpm_stats:file { open };

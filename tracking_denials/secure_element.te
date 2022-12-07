@@ -5,3 +5,11 @@ dontaudit secure_element euiccpixel_app:binder { transfer };
 # b/261519169
 dontaudit secure_element hal_secure_element_st54spi:binder { call };
 dontaudit secure_element hal_secure_element_st54spi:binder { transfer };
+# b/261651095
+dontaudit secure_element hal_secure_element_uicc:binder { call };
+dontaudit secure_element hal_secure_element_uicc:binder { transfer };
+dontaudit secure_element system_data_file:dir { add_name };
+dontaudit secure_element system_data_file:dir { remove_name };
+dontaudit secure_element system_data_file:file { create };
+dontaudit secure_element system_data_file:file { rename };
+dontaudit secure_element system_data_file:file { write open };

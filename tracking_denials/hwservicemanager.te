@@ -1,0 +1,3 @@
+# b/261651112
+dontaudit hwservicemanager hal_usb_impl:binder { call };
+dontaudit hwservicemanager hal_usb_impl:binder { transfer };
