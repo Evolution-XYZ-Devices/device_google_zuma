@@ -43,3 +43,14 @@ dontaudit hal_power_stats_default device:chr_file { open };
 dontaudit hal_power_stats_default device:chr_file { read };
 dontaudit hal_power_stats_default sysfs_acpm_stats:file { getattr };
 dontaudit hal_power_stats_default sysfs_acpm_stats:file { open };
+# b/261783107
+dontaudit hal_power_stats_default device:chr_file { ioctl };
+dontaudit hal_power_stats_default hal_bluetooth_btlinux:binder { call };
+dontaudit hal_power_stats_default sysfs_scsi_devices_0000:dir { search };
+dontaudit hal_power_stats_default sysfs_scsi_devices_0000:file { getattr };
+dontaudit hal_power_stats_default sysfs_scsi_devices_0000:file { open };
+dontaudit hal_power_stats_default sysfs_scsi_devices_0000:file { read };
+dontaudit hal_power_stats_default sysfs_wifi:dir { search };
+dontaudit hal_power_stats_default sysfs_wifi:file { getattr };
+dontaudit hal_power_stats_default sysfs_wifi:file { open };
+dontaudit hal_power_stats_default sysfs_wifi:file { read };

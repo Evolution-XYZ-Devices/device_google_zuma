@@ -30,3 +30,5 @@ dontaudit logger_app vendor_gps_file:dir { read };
 dontaudit logger_app vendor_gps_file:dir { search };
 dontaudit logger_app vendor_gps_prop:property_service { set };
 dontaudit logger_app vendor_logger_prop:property_service { set };
+# b/261783031
+dontaudit logger_app vendor_gps_file:dir { open };
