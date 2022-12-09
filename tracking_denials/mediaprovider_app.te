@@ -1,0 +1,3 @@
+# b/261933250
+#dontaudit mediaprovider_app vendor_file:file { open };
+#dontaudit mediaprovider_app vendor_file:file { read };

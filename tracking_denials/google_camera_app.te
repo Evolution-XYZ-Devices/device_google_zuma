@@ -1,0 +1,5 @@
+# b/261933249
+dontaudit google_camera_app vendor_file:file { getattr };
+dontaudit google_camera_app vendor_file:file { map };
+dontaudit google_camera_app vendor_file:file { open };
+dontaudit google_camera_app vendor_file:file { read };

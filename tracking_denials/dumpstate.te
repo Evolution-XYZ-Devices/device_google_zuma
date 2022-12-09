@@ -1,0 +1,20 @@
+# b/261933169
+dontaudit dumpstate con_monitor_app:process { signal };
+dontaudit dumpstate default_android_service:service_manager { find };
+dontaudit dumpstate euiccpixel_app:process { signal };
+dontaudit dumpstate fuse:dir { search };
+dontaudit dumpstate hal_audio_default:binder { call };
+dontaudit dumpstate hal_confirmationui_default:binder { call };
+dontaudit dumpstate hal_graphics_composer_default:binder { call };
+dontaudit dumpstate hal_health_default:binder { call };
+dontaudit dumpstate modem_efs_file:dir { getattr };
+dontaudit dumpstate modem_img_file:dir { getattr };
+dontaudit dumpstate modem_img_file:filesystem { getattr };
+dontaudit dumpstate modem_userdata_file:dir { getattr };
+dontaudit dumpstate persist_file:dir { getattr };
+dontaudit dumpstate sysfs_scsi_devices_0000:file { getattr };
+dontaudit dumpstate sysfs_scsi_devices_0000:file { open };
+dontaudit dumpstate sysfs_scsi_devices_0000:file { read };
+dontaudit dumpstate system_data_file:dir { open };
+dontaudit dumpstate system_data_file:dir { read };
+dontaudit dumpstate vold:binder { call };

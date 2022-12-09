@@ -32,3 +32,11 @@ dontaudit logger_app vendor_gps_prop:property_service { set };
 dontaudit logger_app vendor_logger_prop:property_service { set };
 # b/261783031
 dontaudit logger_app vendor_gps_file:dir { open };
+# b/261933367
+dontaudit logger_app vendor_gps_file:dir { add_name };
+dontaudit logger_app vendor_gps_file:dir { write };
+dontaudit logger_app vendor_gps_file:file { append };
+dontaudit logger_app vendor_gps_file:file { create };
+dontaudit logger_app vendor_gps_file:file { getattr };
+dontaudit logger_app vendor_gps_file:file { read write open };
+dontaudit logger_app vendor_gps_file:file { setattr };

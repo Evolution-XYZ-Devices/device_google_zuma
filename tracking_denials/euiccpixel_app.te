@@ -54,3 +54,10 @@ dontaudit euiccpixel_app dck_prop:file { read };
 dontaudit euiccpixel_app vendor_secure_element_prop:property_service { set };
 # b/261651113
 dontaudit euiccpixel_app dck_prop:file { map };
+# b/261933311
+dontaudit euiccpixel_app dumpstate:fd { use };
+dontaudit euiccpixel_app dumpstate:fifo_file { append };
+dontaudit euiccpixel_app dumpstate:fifo_file { write };
+dontaudit euiccpixel_app system_server:fifo_file { write };
+dontaudit euiccpixel_app tombstoned:unix_stream_socket { connectto };
+dontaudit euiccpixel_app tombstoned_java_trace_socket:sock_file { write };
