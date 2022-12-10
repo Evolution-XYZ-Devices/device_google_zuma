@@ -15,3 +15,10 @@ dontaudit con_monitor_app tmpfs:file { execute };
 dontaudit con_monitor_app tmpfs:file { map };
 dontaudit con_monitor_app tmpfs:file { read };
 dontaudit con_monitor_app tmpfs:file { write };
+# b/261933171
+dontaudit con_monitor_app dumpstate:fd { use };
+dontaudit con_monitor_app dumpstate:fifo_file { append };
+dontaudit con_monitor_app dumpstate:fifo_file { write };
+dontaudit con_monitor_app system_server:fifo_file { write };
+dontaudit con_monitor_app tombstoned:unix_stream_socket { connectto };
+dontaudit con_monitor_app tombstoned_java_trace_socket:sock_file { write };

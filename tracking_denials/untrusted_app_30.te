@@ -1,0 +1,5 @@
+# b/261933227
+dontaudit untrusted_app_30 vendor_file:file { getattr };
+dontaudit untrusted_app_30 vendor_file:file { map };
+dontaudit untrusted_app_30 vendor_file:file { open };
+dontaudit untrusted_app_30 vendor_file:file { read };

@@ -8,3 +8,5 @@ dontaudit kernel vendor_fw_file:file { read };
 dontaudit kernel vendor_regmap_debugfs:dir { search };
 # b/261650972
 dontaudit kernel vendor_battery_debugfs:dir { search };
+# b/261933155
+dontaudit kernel vendor_fw_file:file { getattr };

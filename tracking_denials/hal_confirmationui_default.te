@@ -1,0 +1,3 @@
+# b/261933368
+dontaudit hal_confirmationui_default dumpstate:fd { use };
+dontaudit hal_confirmationui_default dumpstate:fifo_file { write };
