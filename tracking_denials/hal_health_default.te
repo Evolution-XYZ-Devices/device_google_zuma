@@ -19,3 +19,5 @@ dontaudit hal_health_default vendor_battery_defender_prop:file { read };
 dontaudit hal_health_default vendor_battery_defender_prop:property_service { set };
 # b/261933135
 dontaudit hal_health_default dumpstate:fd { use };
+# b/262178574
+dontaudit hal_health_default dumpstate:fifo_file { write };

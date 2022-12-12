@@ -55,3 +55,6 @@ dontaudit hal_graphics_composer_default vndservicemanager:binder { transfer };
 # b/261933075
 dontaudit hal_graphics_composer_default dumpstate:fd { use };
 dontaudit hal_graphics_composer_default dumpstate:fifo_file { write };
+# b/262178623
+dontaudit hal_graphics_composer_default hal_dumpstate_default:fd { use };
+dontaudit hal_graphics_composer_default hal_dumpstate_default:fifo_file { write };
