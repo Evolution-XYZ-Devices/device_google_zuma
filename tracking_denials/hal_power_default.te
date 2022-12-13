@@ -16,3 +16,9 @@ dontaudit hal_power_default hal_fingerprint_default:binder { transfer };
 dontaudit hal_power_default hal_camera_default:binder { transfer };
 # b/262178497
 dontaudit hal_power_default sysfs_fabric:file { read };
+# b/262315567
+dontaudit hal_power_default sysfs:file { getattr };
+dontaudit hal_power_default sysfs:file { read };
+dontaudit hal_power_default sysfs_display:file { getattr };
+dontaudit hal_power_default sysfs_display:file { read };
+dontaudit hal_power_default sysfs_fabric:file { getattr };
