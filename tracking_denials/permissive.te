@@ -29,4 +29,6 @@ userdebug_or_eng(`
   permissive hal_uwb_vendor_default;
   permissive google_camera_app;
   permissive uwb_vendor_app;
+  permissive hal_wifi_ext;
+  permissive hal_wlc;
 ')
