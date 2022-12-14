@@ -14,3 +14,5 @@ dontaudit system_server hal_usb_gadget_impl:binder { call };
 dontaudit system_server hal_usb_gadget_impl:binder { transfer };
 dontaudit system_server hal_usb_impl:binder { call };
 dontaudit system_server hal_usb_impl:binder { transfer };
+# b/262455682
+dontaudit system_server con_monitor_app:process { setsched };
