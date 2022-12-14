@@ -33,4 +33,8 @@ userdebug_or_eng(`
   permissive hal_wlc;
   permissive init;
   permissive logd;
+  permissive mediacodec_google;
+  permissive mediacodec_samsung;
+  permissive platform_app;
+  permissive hbmsvmanager_app;
 ')
