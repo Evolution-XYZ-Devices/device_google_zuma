@@ -31,4 +31,6 @@ userdebug_or_eng(`
   permissive uwb_vendor_app;
   permissive hal_wifi_ext;
   permissive hal_wlc;
+  permissive init;
+  permissive logd;
 ')

@@ -2,7 +2,6 @@
 /vendor/bin/chre                                                            u:object_r:chre_exec:s0
 /vendor/bin/storageproxyd                                                   u:object_r:tee_exec:s0
 /vendor/bin/tcpdump_logger                                                  u:object_r:tcpdump_logger_exec:s0
-/vendor/bin/init\.display\.sh                                               u:object_r:init-display-sh_exec:s0
 /vendor/bin/trusty_apploader                                                u:object_r:trusty_apploader_exec:s0
 /vendor/bin/trusty_metricsd                                                 u:object_r:trusty_metricsd_exec:s0
 /vendor/bin/dumpsys                                                         u:object_r:vendor_dumpsys:s0
@@ -10,8 +9,6 @@
 /vendor/bin/hw/android\.hardware\.gatekeeper@1\.0-service\.trusty           u:object_r:hal_gatekeeper_default_exec:s0
 /vendor/bin/hw/android\.hardware\.security\.keymint-service\.trusty         u:object_r:hal_keymint_default_exec:s0
 /vendor/bin/hw/android\.hardware\.contexthub-service\.generic               u:object_r:hal_contexthub_default_exec:s0
-/vendor/bin/hw/samsung\.hardware\.media\.c2@1\.2-service                    u:object_r:mediacodec_samsung_exec:s0
-/vendor/bin/hw/google\.hardware\.media\.c2@2\.0-service                     u:object_r:mediacodec_google_exec:s0
 /vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.goodix  u:object_r:hal_fingerprint_default_exec:s0
 /vendor/bin/hw/android\.hardware\.biometrics\.fingerprint-service\.goodix   u:object_r:hal_fingerprint_default_exec:s0
 /vendor/bin/hw/android\.hardware\.nfc-service\.st                           u:object_r:hal_nfc_default_exec:s0
