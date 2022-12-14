@@ -61,3 +61,5 @@ dontaudit euiccpixel_app dumpstate:fifo_file { write };
 dontaudit euiccpixel_app system_server:fifo_file { write };
 dontaudit euiccpixel_app tombstoned:unix_stream_socket { connectto };
 dontaudit euiccpixel_app tombstoned_java_trace_socket:sock_file { write };
+# b/262451641
+dontaudit euiccpixel_app permission_checker_service:service_manager { find };

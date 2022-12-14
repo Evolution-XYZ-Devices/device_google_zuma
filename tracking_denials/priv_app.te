@@ -18,3 +18,5 @@ dontaudit priv_app vendor_file:file { getattr };
 dontaudit priv_app vendor_file:file { map };
 dontaudit priv_app vendor_file:file { open };
 dontaudit priv_app vendor_file:file { read };
+# b/262455954
+dontaudit priv_app euiccpixel_app:binder { call };

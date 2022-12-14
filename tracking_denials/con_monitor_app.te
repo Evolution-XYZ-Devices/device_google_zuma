@@ -22,3 +22,9 @@ dontaudit con_monitor_app dumpstate:fifo_file { write };
 dontaudit con_monitor_app system_server:fifo_file { write };
 dontaudit con_monitor_app tombstoned:unix_stream_socket { connectto };
 dontaudit con_monitor_app tombstoned_java_trace_socket:sock_file { write };
+# b/262455571
+dontaudit con_monitor_app data_file_type:dir { search };
+dontaudit con_monitor_app servicemanager:binder { call };
+dontaudit con_monitor_app statsd:unix_dgram_socket { sendto };
+dontaudit con_monitor_app statsdw_socket:sock_file { write };
+dontaudit con_monitor_app system_file:file { execute };
