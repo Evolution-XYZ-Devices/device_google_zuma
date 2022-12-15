@@ -63,6 +63,8 @@ dontaudit euiccpixel_app tombstoned:unix_stream_socket { connectto };
 dontaudit euiccpixel_app tombstoned_java_trace_socket:sock_file { write };
 # b/262451641
 dontaudit euiccpixel_app permission_checker_service:service_manager { find };
+# b/265286368
+dontaudit euiccpixel_app default_android_service:service_manager { find };
 # b/264489745
 userdebug_or_eng(`
   permissive euiccpixel_app;
