@@ -67,7 +67,6 @@
 /data/vendor/powerstats(/.*)?                                               u:object_r:powerstats_vendor_data_file:s0
 
 # Persist
-/mnt/vendor/persist/battery(/.*)?                                           u:object_r:persist_battery_file:s0
 /mnt/vendor/persist/sensors/registry(/.*)?                                  u:object_r:persist_sensor_reg_file:s0
 /mnt/vendor/persist/ss(/.*)?                                                u:object_r:persist_ss_file:s0
 /mnt/vendor/persist/uwb(/.*)?                                               u:object_r:persist_uwb_file:s0

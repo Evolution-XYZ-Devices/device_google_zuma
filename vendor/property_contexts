@@ -7,3 +7,6 @@ vendor.camera.fatp.                        u:object_r:vendor_camera_fatp_prop:s0
 # Fingerprint
 vendor.fingerprint.                        u:object_r:vendor_fingerprint_prop:s0
 vendor.gf.                                 u:object_r:vendor_fingerprint_prop:s0
+
+# Battery
+vendor.battery.defender.                   u:object_r:vendor_battery_defender_prop:s0
