@@ -1,0 +1,6 @@
+# BCL
+allow pixelstats_vendor sysfs_bcl:dir search;
+allow pixelstats_vendor sysfs_bcl:file r_file_perms;
+allow pixelstats_vendor mitigation_vendor_data_file:dir search;
+allow pixelstats_vendor mitigation_vendor_data_file:file { read write };
+get_prop(pixelstats_vendor, vendor_brownout_reason_prop);
