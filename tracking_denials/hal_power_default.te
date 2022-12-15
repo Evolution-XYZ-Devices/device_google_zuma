@@ -22,3 +22,11 @@ dontaudit hal_power_default sysfs:file { read };
 dontaudit hal_power_default sysfs_display:file { getattr };
 dontaudit hal_power_default sysfs_display:file { read };
 dontaudit hal_power_default sysfs_fabric:file { getattr };
+# b/262633072
+dontaudit hal_power_default hal_power_default:capability { dac_read_search };
+dontaudit hal_power_default sysfs_camera:file { getattr };
+dontaudit hal_power_default sysfs_camera:file { read };
+dontaudit hal_power_default vendor_camera_prop:file { getattr };
+dontaudit hal_power_default vendor_camera_prop:file { map };
+dontaudit hal_power_default vendor_camera_prop:file { open };
+dontaudit hal_power_default vendor_camera_prop:file { read };

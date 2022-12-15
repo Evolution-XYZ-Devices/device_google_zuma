@@ -17,3 +17,7 @@ dontaudit dumpstate sysfs_scsi_devices_0000:file { read };
 dontaudit dumpstate system_data_file:dir { open };
 dontaudit dumpstate system_data_file:dir { read };
 dontaudit dumpstate vold:binder { call };
+# b/262633248
+dontaudit dumpstate mediacodec_google:process { signal };
+dontaudit dumpstate mediacodec_samsung:process { signal };
+dontaudit dumpstate rild:binder { call };

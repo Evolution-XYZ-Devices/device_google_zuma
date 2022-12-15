@@ -1,0 +1,2 @@
+# b/262633230
+dontaudit mediacodec_google vndbinder_device:chr_file { ioctl };
