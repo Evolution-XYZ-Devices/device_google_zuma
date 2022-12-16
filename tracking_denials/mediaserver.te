@@ -1,0 +1,3 @@
+# b/262794577
+dontaudit mediaserver mediacodec_google:binder { call };
+dontaudit mediaserver mediacodec_samsung:binder { call };

@@ -1,2 +1,5 @@
 # b/262455388
 dontaudit hal_wifi_ext grilservice_app:binder { call };
+# b/262794359
+dontaudit hal_wifi_ext updated_wifi_firmware_data_file:dir { search };
+dontaudit hal_wifi_ext vendor_wifi_version:property_service { set };

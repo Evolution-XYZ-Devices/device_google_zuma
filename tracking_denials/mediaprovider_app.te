@@ -1,0 +1,3 @@
+# b/262793919
+dontaudit appdomain mediacodec_samsung:binder { call };
+dontaudit appdomain mediacodec_samsung:binder { transfer };

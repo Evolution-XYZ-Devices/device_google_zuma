@@ -10,3 +10,5 @@ dontaudit secure_element system_data_file:dir { remove_name };
 dontaudit secure_element system_data_file:file { create };
 dontaudit secure_element system_data_file:file { rename };
 dontaudit secure_element system_data_file:file { write open };
+# b/262794969
+dontaudit secure_element system_data_file:file { unlink };

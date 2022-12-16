@@ -1,0 +1,2 @@
+# b/262794578
+dontaudit mediaswcodec mediacodec_samsung:binder { call };

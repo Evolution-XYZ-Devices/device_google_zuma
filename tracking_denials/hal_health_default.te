@@ -21,3 +21,5 @@ dontaudit hal_health_default vendor_battery_defender_prop:property_service { set
 dontaudit hal_health_default dumpstate:fd { use };
 # b/262178574
 dontaudit hal_health_default dumpstate:fifo_file { write };
+# b/262794970
+dontaudit hal_health_default sysfs_batteryinfo:file { write };

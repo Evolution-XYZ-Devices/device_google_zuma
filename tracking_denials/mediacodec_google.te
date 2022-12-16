@@ -1,2 +1,17 @@
 # b/262633230
 dontaudit mediacodec_google vndbinder_device:chr_file { ioctl };
+# b/262793920
+dontaudit mediacodec_google dmabuf_system_heap_device:chr_file { getattr };
+dontaudit mediacodec_google hwservicemanager:binder { call };
+dontaudit mediacodec_google hwservicemanager:binder { transfer };
+dontaudit mediacodec_google hwservicemanager_prop:file { getattr };
+dontaudit mediacodec_google hwservicemanager_prop:file { map };
+dontaudit mediacodec_google hwservicemanager_prop:file { open };
+dontaudit mediacodec_google hwservicemanager_prop:file { read };
+dontaudit mediacodec_google mediaserver:binder { transfer };
+dontaudit mediacodec_google platform_app:binder { transfer };
+dontaudit mediacodec_google system_server:binder { transfer };
+dontaudit mediacodec_google vndbinder_device:chr_file { map };
+dontaudit mediacodec_google vndbinder_device:chr_file { open };
+dontaudit mediacodec_google vndbinder_device:chr_file { read };
+dontaudit mediacodec_google vndbinder_device:chr_file { write };

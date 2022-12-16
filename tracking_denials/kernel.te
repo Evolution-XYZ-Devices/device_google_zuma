@@ -10,3 +10,11 @@ dontaudit kernel vendor_regmap_debugfs:dir { search };
 dontaudit kernel vendor_battery_debugfs:dir { search };
 # b/261933155
 dontaudit kernel vendor_fw_file:file { getattr };
+# b/262794429
+dontaudit kernel same_process_hal_file:file { getattr };
+dontaudit kernel sepolicy_file:file { getattr };
+dontaudit kernel system_bootstrap_lib_file:dir { getattr };
+dontaudit kernel system_bootstrap_lib_file:file { getattr };
+dontaudit kernel system_dlkm_file:dir { getattr };
+dontaudit kernel vendor_fw_file:dir { getattr };
+dontaudit kernel vendor_fw_file:dir { read };
