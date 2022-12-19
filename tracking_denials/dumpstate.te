@@ -21,3 +21,6 @@ dontaudit dumpstate vold:binder { call };
 dontaudit dumpstate mediacodec_google:process { signal };
 dontaudit dumpstate mediacodec_samsung:process { signal };
 dontaudit dumpstate rild:binder { call };
+# b/263048776
+dontaudit dumpstate hal_usb_impl:binder { call };
+dontaudit dumpstate hal_uwb_default:binder { call };

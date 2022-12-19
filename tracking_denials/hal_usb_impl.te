@@ -23,3 +23,6 @@ dontaudit hal_usb_impl sysfs:file { getattr };
 dontaudit hal_usb_impl sysfs:file { open };
 dontaudit hal_usb_impl sysfs:file { read };
 dontaudit hal_usb_impl system_server:binder { call };
+# b/263048760
+dontaudit hal_usb_impl dumpstate:fd { use };
+dontaudit hal_usb_impl dumpstate:fifo_file { write };

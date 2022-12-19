@@ -22,3 +22,7 @@ dontaudit mediacodec_samsung vndbinder_device:chr_file { read };
 dontaudit mediacodec_samsung vndbinder_device:chr_file { write };
 dontaudit mediacodec_samsung vndservicemanager:binder { call };
 dontaudit mediacodec_samsung vndservicemanager:binder { transfer };
+# b/263049105
+dontaudit mediacodec_samsung dumpstate:fd { use };
+dontaudit mediacodec_samsung dumpstate:fifo_file { append };
+dontaudit mediacodec_samsung dumpstate:fifo_file { write };
