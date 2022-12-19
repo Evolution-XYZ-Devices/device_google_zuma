@@ -37,4 +37,8 @@ userdebug_or_eng(`
   permissive mediacodec_samsung;
   permissive platform_app;
   permissive hbmsvmanager_app;
+  permissive rlsservice;
+  permissive system_server;
+  permissive tcpdump_logger;
+  permissive vendor_init;
 ')
