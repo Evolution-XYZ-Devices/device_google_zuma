@@ -36,6 +36,9 @@ genfscon sysfs /devices/platform/19470000.drmdecon/dqe0/atc                     
 genfscon sysfs /module/drm/parameters/vblankoffdelay                                                      u:object_r:sysfs_display:s0
 genfscon sysfs /devices/platform/exynos-drm/tui_status                                                    u:object_r:sysfs_display:s0
 
+# mediacodec_samsung
+genfscon sysfs /devices/platform/mfc/video4linux/video u:object_r:sysfs_mfc:s0
+
 # wake up nodes
 genfscon sysfs /devices/platform/10c80000.hsi2c/i2c-0/6-0008/wakeup/wakeup                                                u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/10c90000.hsi2c/i2c-0/7-003c/power_supply/wireless/wakeup                                 u:object_r:sysfs_wakeup:s0
