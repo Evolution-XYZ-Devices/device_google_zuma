@@ -5,6 +5,8 @@
 /vendor/bin/hw/android\.hardware\.gxp\.logging@service-gxp-logging          u:object_r:gxp_logging_exec:s0
 /vendor/bin/hw/android\.hardware\.power\.stats-service\.pixel               u:object_r:hal_power_stats_default_exec:s0
 /vendor/bin/hw/android\.hardware\.secure_element@1\.2-service-gto           u:object_r:hal_secure_element_st54spi_exec:s0
+/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.goodix  u:object_r:hal_fingerprint_default_exec:s0
+/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint-service\.goodix   u:object_r:hal_fingerprint_default_exec:s0
 /vendor/bin/hw/android\.hardware\.usb-service                               u:object_r:hal_usb_impl_exec:s0
 /vendor/bin/hw/android\.hardware\.usb\.gadget-service                       u:object_r:hal_usb_gadget_impl_exec:s0
 /vendor/bin/hw/android\.hardware\.secure_element@1\.2-uicc-service          u:object_r:hal_secure_element_uicc_exec:s0
@@ -65,6 +67,7 @@
 /dev/block/platform/13200000\.ufs/by-name/vendor_kernel_boot_[ab]           u:object_r:custom_ab_block_device:s0
 /dev/gxp                                                                    u:object_r:gxp_device:s0
 /dev/mali0                                                                  u:object_r:gpu_device:s0
+/dev/goodix_fp                                                              u:object_r:fingerprint_device:s0
 /dev/logbuffer_usbpd                                                        u:object_r:logbuffer_device:s0
 /dev/logbuffer_ssoc                                                         u:object_r:logbuffer_device:s0
 /dev/logbuffer_wireless                                                     u:object_r:logbuffer_device:s0

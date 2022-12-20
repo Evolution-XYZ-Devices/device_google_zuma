@@ -3,3 +3,7 @@ persist.vendor.camera.                     u:object_r:vendor_camera_prop:s0
 vendor.camera.                             u:object_r:vendor_camera_prop:s0
 vendor.camera.debug.                       u:object_r:vendor_camera_debug_prop:s0
 vendor.camera.fatp.                        u:object_r:vendor_camera_fatp_prop:s0
+
+# Fingerprint
+vendor.fingerprint.                        u:object_r:vendor_fingerprint_prop:s0
+vendor.gf.                                 u:object_r:vendor_fingerprint_prop:s0
