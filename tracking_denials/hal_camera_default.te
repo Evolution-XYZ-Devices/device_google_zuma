@@ -60,3 +60,5 @@ dontaudit hal_camera_default vndbinder_device:chr_file { open };
 dontaudit hal_camera_default vndbinder_device:chr_file { read };
 dontaudit hal_camera_default vndbinder_device:chr_file { write };
 dontaudit hal_camera_default vndservicemanager:binder { call };
+# b/263185135
+dontaudit hal_camera_default system_server:binder { transfer };

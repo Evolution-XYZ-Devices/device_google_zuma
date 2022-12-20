@@ -20,3 +20,5 @@ dontaudit priv_app vendor_file:file { open };
 dontaudit priv_app vendor_file:file { read };
 # b/262455954
 dontaudit priv_app euiccpixel_app:binder { call };
+# b/263185432
+dontaudit priv_app privapp_data_file:file { unlink };

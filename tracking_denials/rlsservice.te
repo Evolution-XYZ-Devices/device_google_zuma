@@ -1,0 +1,25 @@
+# b/263185565
+dontaudit rlsservice aoc_device:chr_file { getattr };
+dontaudit rlsservice aoc_device:chr_file { open };
+dontaudit rlsservice aoc_device:chr_file { read write };
+dontaudit rlsservice apex_info_file:file { getattr };
+dontaudit rlsservice apex_info_file:file { open };
+dontaudit rlsservice apex_info_file:file { read };
+dontaudit rlsservice apex_info_file:file { watch };
+dontaudit rlsservice device:dir { read };
+dontaudit rlsservice device:dir { watch };
+dontaudit rlsservice rls_service:service_manager { add };
+dontaudit rlsservice sysfs_leds:dir { search };
+dontaudit rlsservice sysfs_leds:file { open };
+dontaudit rlsservice sysfs_leds:file { read };
+dontaudit rlsservice vendor_camera_prop:file { getattr };
+dontaudit rlsservice vendor_camera_prop:file { map };
+dontaudit rlsservice vendor_camera_prop:file { open };
+dontaudit rlsservice vendor_camera_prop:file { read };
+dontaudit rlsservice vndbinder_device:chr_file { ioctl };
+dontaudit rlsservice vndbinder_device:chr_file { map };
+dontaudit rlsservice vndbinder_device:chr_file { open };
+dontaudit rlsservice vndbinder_device:chr_file { read };
+dontaudit rlsservice vndbinder_device:chr_file { write };
+dontaudit rlsservice vndservicemanager:binder { call };
+dontaudit rlsservice vndservicemanager:binder { transfer };

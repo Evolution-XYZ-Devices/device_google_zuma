@@ -15,3 +15,5 @@ dontaudit mediacodec_google vndbinder_device:chr_file { map };
 dontaudit mediacodec_google vndbinder_device:chr_file { open };
 dontaudit mediacodec_google vndbinder_device:chr_file { read };
 dontaudit mediacodec_google vndbinder_device:chr_file { write };
+# b/263185431
+dontaudit mediacodec_google nfc:binder { transfer };
