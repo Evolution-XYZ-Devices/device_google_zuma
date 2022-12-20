@@ -41,4 +41,8 @@ userdebug_or_eng(`
   permissive system_server;
   permissive tcpdump_logger;
   permissive vendor_init;
+  permissive tee;
+  permissive trusty_apploader;
+  permissive trusty_metricsd;
+  permissive vold;
 ')
