@@ -1,0 +1,18 @@
+# b/263304957
+dontaudit tee gsi_metadata_file:dir { search };
+dontaudit tee hal_system_suspend_service:service_manager { find };
+dontaudit tee init:unix_stream_socket { connectto };
+dontaudit tee metadata_file:dir { search };
+dontaudit tee mnt_vendor_file:dir { search };
+dontaudit tee persist_file:dir { search };
+dontaudit tee persist_ss_file:dir { search };
+dontaudit tee persist_ss_file:file { open };
+dontaudit tee persist_ss_file:file { read write };
+dontaudit tee property_socket:sock_file { write };
+dontaudit tee servicemanager:binder { call };
+dontaudit tee sg_device:chr_file { ioctl };
+dontaudit tee sg_device:chr_file { open };
+dontaudit tee sg_device:chr_file { read write };
+dontaudit tee system_suspend_server:binder { call };
+dontaudit tee tee_data_file:lnk_file { read };
+dontaudit tee vendor_trusty_storage_prop:property_service { set };

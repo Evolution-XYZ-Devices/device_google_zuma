@@ -1,0 +1,7 @@
+# b/263305034
+dontaudit trusty_apploader dmabuf_system_heap_device:chr_file { ioctl };
+dontaudit trusty_apploader dmabuf_system_heap_device:chr_file { open };
+dontaudit trusty_apploader dmabuf_system_heap_device:chr_file { read };
+dontaudit trusty_apploader tee_device:chr_file { ioctl };
+dontaudit trusty_apploader tee_device:chr_file { open };
+dontaudit trusty_apploader tee_device:chr_file { read write };

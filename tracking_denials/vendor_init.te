@@ -9,3 +9,5 @@ dontaudit vendor_init bootdevice_sysdev:file { create };
 dontaudit vendor_init modem_img_file:filesystem { getattr };
 dontaudit vendor_init proc_dirty:file { write };
 dontaudit vendor_init proc_sched:file { write };
+# b/263305106
+dontaudit vendor_init vendor_battery_defender_prop:property_service { set };
