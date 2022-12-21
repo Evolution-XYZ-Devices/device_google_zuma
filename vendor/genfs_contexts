@@ -38,6 +38,11 @@ genfscon sysfs /devices/platform/19440000.drmdsim/19440000.drmdsim.0/serial_numb
 genfscon sysfs /devices/platform/19470000.drmdecon/dqe0/atc                                               u:object_r:sysfs_display:s0
 genfscon sysfs /module/drm/parameters/vblankoffdelay                                                      u:object_r:sysfs_display:s0
 genfscon sysfs /devices/platform/exynos-drm/tui_status                                                    u:object_r:sysfs_display:s0
+# EM Profile
+genfscon sysfs /kernel/pixel_em/active_profile                            u:object_r:sysfs_em_profile:s0
+
+# GPU
+genfscon sysfs /devices/platform/1f000000.mali/hint_min_freq                   u:object_r:sysfs_gpu:s0
 
 # wake up nodes
 genfscon sysfs /devices/platform/10c80000.hsi2c/i2c-0/6-0008/wakeup/wakeup                                                u:object_r:sysfs_wakeup:s0
