@@ -1,0 +1,2 @@
+# b/260366398
+dontaudit proc_vendor_sched proc:filesystem { associate };
