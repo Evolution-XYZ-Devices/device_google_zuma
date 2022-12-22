@@ -1,2 +1,0 @@
-# b/260366322
-dontaudit pixelstats_vendor servicemanager:binder { call };
