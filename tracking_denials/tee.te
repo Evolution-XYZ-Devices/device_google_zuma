@@ -16,3 +16,5 @@ dontaudit tee sg_device:chr_file { read write };
 dontaudit tee system_suspend_server:binder { call };
 dontaudit tee tee_data_file:lnk_file { read };
 dontaudit tee vendor_trusty_storage_prop:property_service { set };
+# b/263429986
+dontaudit tee servicemanager:binder { transfer };
