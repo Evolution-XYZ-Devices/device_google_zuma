@@ -11,3 +11,5 @@ dontaudit vendor_init proc_dirty:file { write };
 dontaudit vendor_init proc_sched:file { write };
 # b/263305106
 dontaudit vendor_init vendor_battery_defender_prop:property_service { set };
+# b/263525155
+dontaudit vendor_init system_boot_reason_prop:file { read };
