@@ -78,9 +78,6 @@ genfscon sysfs /devices/platform/17000080.devfreq_bo/devfreq/17000080.devfreq_bo
 # OTA
 genfscon sysfs /devices/platform/13200000.ufs/pixel/boot_lun_enabled           u:object_r:sysfs_ota:s0
 
-# Display
-genfscon sysfs /devices/platform/19440000.drmdsim/19440000.drmdsim.0/backlight/panel0-backlight/als_table u:object_r:sysfs_write_leds:s0
-
 # Storage
 genfscon proc /fs/f2fs                                                  u:object_r:proc_f2fs:s0
 genfscon proc /sys/vm/swappiness                                        u:object_r:proc_dirty:s0
