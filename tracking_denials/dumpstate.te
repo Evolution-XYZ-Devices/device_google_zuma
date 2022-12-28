@@ -1,6 +1,6 @@
 # b/261933169
 dontaudit dumpstate con_monitor_app:process { signal };
-dontaudit dumpstate default_android_service:service_manager { find };
+dontaudit dumpstate hal_power_stats_vendor_service:service_manager { find };
 dontaudit dumpstate euiccpixel_app:process { signal };
 dontaudit dumpstate fuse:dir { search };
 dontaudit dumpstate hal_audio_default:binder { call };

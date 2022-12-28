@@ -12,6 +12,9 @@ PRODUCT_PRIVATE_SEPOLICY_DIRS += device/google/zuma-sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += device/google/zuma-sepolicy/system_ext/public
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += device/google/zuma-sepolicy/system_ext/private
 
+# PowerStats HAL
+BOARD_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/powerstats
+
 # To be reviewed and removed.
 BOARD_SEPOLICY_DIRS += device/google/zuma-sepolicy/legacy/whitechapel_pro
 PRODUCT_PRIVATE_SEPOLICY_DIRS += device/google/zuma-sepolicy/legacy/private

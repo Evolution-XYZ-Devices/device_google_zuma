@@ -53,6 +53,35 @@ genfscon sysfs /devices/platform/19440000.drmdsim/19440000.drmdsim.0/backlight/p
 # mediacodec_samsung
 genfscon sysfs /devices/platform/mfc/video4linux/video u:object_r:sysfs_mfc:s0
 
+# CPU
+genfscon sysfs /devices/platform/17000020.devfreq_int/devfreq/17000020.devfreq_int/time_in_state       u:object_r:sysfs_cpu:s0
+genfscon sysfs /devices/platform/17000030.devfreq_intcam/devfreq/17000030.devfreq_intcam/time_in_state u:object_r:sysfs_cpu:s0
+genfscon sysfs /devices/platform/17000040.devfreq_disp/devfreq/17000040.devfreq_disp/time_in_state     u:object_r:sysfs_cpu:s0
+genfscon sysfs /devices/platform/17000050.devfreq_cam/devfreq/17000050.devfreq_cam/time_in_state       u:object_r:sysfs_cpu:s0
+genfscon sysfs /devices/platform/17000060.devfreq_tnr/devfreq/17000060.devfreq_tnr/time_in_state       u:object_r:sysfs_cpu:s0
+genfscon sysfs /devices/platform/17000070.devfreq_mfc/devfreq/17000070.devfreq_mfc/time_in_state       u:object_r:sysfs_cpu:s0
+genfscon sysfs /devices/platform/17000080.devfreq_bw/devfreq/17000080.devfreq_bw/time_in_state         u:object_r:sysfs_cpu:s0
+genfscon sysfs /devices/platform/17000090.devfreq_dsu/devfreq/17000090.devfreq_dsu/time_in_state       u:object_r:sysfs_cpu:s0
+genfscon sysfs /devices/platform/170000a0.devfreq_bci/devfreq/170000a0.devfreq_bci/time_in_state       u:object_r:sysfs_cpu:s0
+genfscon sysfs /devices/platform/1f000000.mali/time_in_state                                           u:object_r:sysfs_cpu:s0
+genfscon sysfs /devices/platform/1f000000.mali/uid_time_in_state                                       u:object_r:sysfs_cpu:s0
+
+# Power ODPM
+genfscon sysfs /devices/platform/acpm_mfd_bus@15500000/i2c-0/0-001f/s2mpg14-meter/s2mpg14-odpm/iio:device0/enabled_rails u:object_r:sysfs_odpm:s0
+genfscon sysfs /devices/platform/acpm_mfd_bus@15500000/i2c-0/0-001f/s2mpg14-meter/s2mpg14-odpm/iio:device0/energy_value  u:object_r:sysfs_odpm:s0
+genfscon sysfs /devices/platform/acpm_mfd_bus@15500000/i2c-0/0-001f/s2mpg14-meter/s2mpg14-odpm/iio:device0/name          u:object_r:sysfs_odpm:s0
+genfscon sysfs /devices/platform/acpm_mfd_bus@15500000/i2c-0/0-001f/s2mpg14-meter/s2mpg14-odpm/iio:device0/sampling_rate u:object_r:sysfs_odpm:s0
+genfscon sysfs /devices/platform/acpm_mfd_bus@15510000/i2c-1/1-002f/s2mpg15-meter/s2mpg15-odpm/iio:device1/enabled_rails u:object_r:sysfs_odpm:s0
+genfscon sysfs /devices/platform/acpm_mfd_bus@15510000/i2c-1/1-002f/s2mpg15-meter/s2mpg15-odpm/iio:device1/energy_value  u:object_r:sysfs_odpm:s0
+genfscon sysfs /devices/platform/acpm_mfd_bus@15510000/i2c-1/1-002f/s2mpg15-meter/s2mpg15-odpm/iio:device1/name          u:object_r:sysfs_odpm:s0
+genfscon sysfs /devices/platform/acpm_mfd_bus@15510000/i2c-1/1-002f/s2mpg15-meter/s2mpg15-odpm/iio:device1/sampling_rate u:object_r:sysfs_odpm:s0
+
+# Power Stats
+genfscon sysfs /devices/platform/10c80000.hsi2c/i2c-6/6-0008/power_stats u:object_r:sysfs_power_stats:s0
+genfscon sysfs /devices/platform/12100000.pcie/power_stats               u:object_r:sysfs_power_stats:s0
+genfscon sysfs /devices/platform/13120000.pcie/power_stats               u:object_r:sysfs_power_stats:s0
+genfscon sysfs /devices/platform/cpif/modem/power_stats                  u:object_r:sysfs_power_stats:s0
+
 # wake up nodes
 genfscon sysfs /devices/platform/10c80000.hsi2c/i2c-0/6-0008/wakeup/wakeup                                                u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/10c90000.hsi2c/i2c-0/7-003c/power_supply/wireless/wakeup                                 u:object_r:sysfs_wakeup:s0
