@@ -1,0 +1,2 @@
+# b/264204392
+dontaudit hal_camera_default hal_radioext_default:binder { call };

@@ -13,3 +13,9 @@ dontaudit system_suspend_server sysfs_aoc:file { read };
 dontaudit system_suspend_server chre:binder { transfer };
 # b/263305203
 dontaudit system_suspend_server tee:binder { transfer };
+# b/264204215
+dontaudit system_suspend_server sysfs_batteryinfo:dir { open };
+dontaudit system_suspend_server sysfs_batteryinfo:dir { read };
+dontaudit system_suspend_server sysfs_batteryinfo:file { getattr };
+dontaudit system_suspend_server sysfs_batteryinfo:file { open };
+dontaudit system_suspend_server sysfs_batteryinfo:file { read };
