@@ -1,2 +1,0 @@
-# b/261105238
-dontaudit bootdevice_sysdev sysfs:filesystem { associate };

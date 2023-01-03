@@ -3,3 +3,4 @@ dontaudit mediaprovider_app vendor_file:file { getattr };
 dontaudit mediaprovider_app vendor_file:file { map };
 dontaudit mediaprovider_app vendor_file:file { open };
 dontaudit mediaprovider_app vendor_file:file { read };
+permissive mediaprovider_app;
