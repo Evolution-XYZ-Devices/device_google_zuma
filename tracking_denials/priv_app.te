@@ -13,11 +13,6 @@ dontaudit priv_app euiccpixel_app:binder { transfer };
 # b/260922442
 dontaudit priv_app default_android_service:service_manager { find };
 dontaudit priv_app euiccpixel_app:binder { transfer };
-# b/261933097
-dontaudit priv_app vendor_file:file { getattr };
-dontaudit priv_app vendor_file:file { map };
-dontaudit priv_app vendor_file:file { open };
-dontaudit priv_app vendor_file:file { read };
 # b/262455954
 dontaudit priv_app euiccpixel_app:binder { call };
 # b/263185432
