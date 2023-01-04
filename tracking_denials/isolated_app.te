@@ -1,5 +1,0 @@
-# b/261933226
-dontaudit isolated_app vendor_file:file { getattr };
-dontaudit isolated_app vendor_file:file { map };
-dontaudit isolated_app vendor_file:file { open };
-dontaudit isolated_app vendor_file:file { read };

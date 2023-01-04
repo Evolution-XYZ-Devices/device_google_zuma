@@ -1,8 +1,3 @@
-# b/261933249
-dontaudit google_camera_app vendor_file:file { getattr };
-dontaudit google_camera_app vendor_file:file { map };
-dontaudit google_camera_app vendor_file:file { open };
-dontaudit google_camera_app vendor_file:file { read };
 # b/262455755
 dontaudit google_camera_app activity_service:service_manager { find };
 dontaudit google_camera_app cameraserver_service:service_manager { find };
