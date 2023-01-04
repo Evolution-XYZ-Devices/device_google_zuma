@@ -1,2 +1,6 @@
 # b/264204392
 dontaudit hal_camera_default hal_radioext_default:binder { call };
+# b/264321380
+dontaudit hal_camera_default gxp_device:chr_file { ioctl };
+dontaudit hal_camera_default gxp_device:chr_file { open };
+dontaudit hal_camera_default gxp_device:chr_file { read write };
