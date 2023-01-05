@@ -83,16 +83,6 @@ genfscon sysfs /devices/platform/13120000.pcie/power_stats               u:objec
 genfscon sysfs /devices/platform/cpif/modem/power_stats                  u:object_r:sysfs_power_stats:s0
 
 # Battery
-genfscon sysfs /devices/platform/10c90000.hsi2c/i2c-0/0-003c                            u:object_r:sysfs_wlc:s0
-genfscon sysfs /devices/platform/10c90000.hsi2c/i2c-1/1-003c                            u:object_r:sysfs_wlc:s0
-genfscon sysfs /devices/platform/10c90000.hsi2c/i2c-2/2-003c                            u:object_r:sysfs_wlc:s0
-genfscon sysfs /devices/platform/10c90000.hsi2c/i2c-3/3-003c                            u:object_r:sysfs_wlc:s0
-genfscon sysfs /devices/platform/10c90000.hsi2c/i2c-4/4-003c                            u:object_r:sysfs_wlc:s0
-genfscon sysfs /devices/platform/10c90000.hsi2c/i2c-5/5-003c                            u:object_r:sysfs_wlc:s0
-genfscon sysfs /devices/platform/10c90000.hsi2c/i2c-6/6-003c                            u:object_r:sysfs_wlc:s0
-genfscon sysfs /devices/platform/10c90000.hsi2c/i2c-7/7-003c                            u:object_r:sysfs_wlc:s0
-genfscon sysfs /devices/platform/10c90000.hsi2c/i2c-8/8-003c                            u:object_r:sysfs_wlc:s0
-genfscon sysfs /devices/platform/10c90000.hsi2c/i2c-9/9-003c                            u:object_r:sysfs_wlc:s0
 genfscon sysfs /devices/platform/google,battery/power_supply/battery                    u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/google,cpm                                             u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/google,charger                                         u:object_r:sysfs_batteryinfo:s0
