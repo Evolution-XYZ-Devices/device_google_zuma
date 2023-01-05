@@ -30,3 +30,7 @@ dontaudit hal_power_default vendor_camera_prop:file { getattr };
 dontaudit hal_power_default vendor_camera_prop:file { map };
 dontaudit hal_power_default vendor_camera_prop:file { open };
 dontaudit hal_power_default vendor_camera_prop:file { read };
+# b/264489779
+userdebug_or_eng(`
+  permissive hal_power_default;
+')

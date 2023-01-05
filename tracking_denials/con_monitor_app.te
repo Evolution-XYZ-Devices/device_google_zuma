@@ -28,3 +28,7 @@ dontaudit con_monitor_app servicemanager:binder { call };
 dontaudit con_monitor_app statsd:unix_dgram_socket { sendto };
 dontaudit con_monitor_app statsdw_socket:sock_file { write };
 dontaudit con_monitor_app system_file:file { execute };
+# b/264489520
+userdebug_or_eng(`
+  permissive con_monitor_app;
+')

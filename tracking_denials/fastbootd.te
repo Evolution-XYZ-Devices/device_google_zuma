@@ -1,0 +1,4 @@
+# b/264489957
+userdebug_or_eng(`
+  permissive fastbootd;
+')

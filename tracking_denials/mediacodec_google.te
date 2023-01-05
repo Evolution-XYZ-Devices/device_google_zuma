@@ -1,0 +1,4 @@
+# b/264490072
+userdebug_or_eng(`
+  permissive mediacodec_google;
+')

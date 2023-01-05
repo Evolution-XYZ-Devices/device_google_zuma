@@ -29,3 +29,7 @@ dontaudit hal_vibrator_default vndbinder_device:chr_file { map };
 dontaudit hal_vibrator_default vndbinder_device:chr_file { open };
 dontaudit hal_vibrator_default vndbinder_device:chr_file { read };
 dontaudit hal_vibrator_default vndbinder_device:chr_file { write };
+# b/264490051
+userdebug_or_eng(`
+  permissive hal_vibrator_default;
+')

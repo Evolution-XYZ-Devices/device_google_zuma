@@ -2,3 +2,7 @@
 dontaudit rild dumpstate:fd { use };
 # b/263049190
 dontaudit rild dumpstate:fifo_file { write };
+# b/264490075
+userdebug_or_eng(`
+  permissive rild;
+')

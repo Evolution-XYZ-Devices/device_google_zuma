@@ -1,3 +1,7 @@
 # b/260366321
 dontaudit shell property_type:file *;
 
+# b/264489784
+userdebug_or_eng(`
+  permissive shell;
+')

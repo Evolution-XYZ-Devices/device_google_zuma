@@ -1,0 +1,4 @@
+# b/264489189
+userdebug_or_eng(`
+  permissive hal_power_stats_default;
+')

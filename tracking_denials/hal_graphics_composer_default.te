@@ -5,3 +5,7 @@ dontaudit hal_graphics_composer_default vendor_hwc_log_file:file { getattr };
 dontaudit hal_graphics_composer_default vendor_hwc_log_file:file { open };
 dontaudit hal_graphics_composer_default vendor_hwc_log_file:file { write };
 dontaudit hal_graphics_composer_default vendor_log_file:dir { search };
+# b/264489746
+userdebug_or_eng(`
+  permissive hal_graphics_composer_default;
+')

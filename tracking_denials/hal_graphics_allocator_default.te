@@ -1,0 +1,4 @@
+# b/264489636
+userdebug_or_eng(`
+  permissive hal_graphics_allocator_default;
+')

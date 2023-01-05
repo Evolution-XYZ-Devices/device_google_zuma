@@ -1,3 +1,7 @@
 # b/263185547
 dontaudit nfc mediacodec_google:binder { call };
 dontaudit nfc mediacodec_google:binder { transfer };
+# b/264490053
+userdebug_or_eng(`
+  permissive nfc;
+')

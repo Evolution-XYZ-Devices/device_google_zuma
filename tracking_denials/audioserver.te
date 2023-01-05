@@ -1,0 +1,4 @@
+# b/264484544
+userdebug_or_eng(`
+  permissive audioserver;
+')

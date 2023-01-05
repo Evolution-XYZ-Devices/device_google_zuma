@@ -1,0 +1,4 @@
+# b/264489564
+userdebug_or_eng(`
+  permissive ofl_app;
+')

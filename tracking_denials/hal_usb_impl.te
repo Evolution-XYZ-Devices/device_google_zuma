@@ -31,3 +31,7 @@ dontaudit hal_usb_impl sysfs_batteryinfo:dir { search };
 dontaudit hal_usb_impl sysfs_batteryinfo:file { getattr };
 dontaudit hal_usb_impl sysfs_batteryinfo:file { open };
 dontaudit hal_usb_impl sysfs_batteryinfo:file { read };
+# b/264489561
+userdebug_or_eng(`
+  permissive hal_usb_impl;
+')

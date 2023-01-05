@@ -1,3 +1,7 @@
 # b/261651112
 dontaudit hwservicemanager hal_usb_impl:binder { call };
 dontaudit hwservicemanager hal_usb_impl:binder { transfer };
+# b/264489781
+userdebug_or_eng(`
+  permissive hwservicemanager;
+')

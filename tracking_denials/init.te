@@ -2,3 +2,7 @@
 dontaudit init ram_device:blk_file { write };
 dontaudit init sysfs_scsi_devices_0000:file { open };
 dontaudit init sysfs_scsi_devices_0000:file { write };
+# b/264489678
+userdebug_or_eng(`
+  permissive init;
+')

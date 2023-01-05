@@ -40,3 +40,7 @@ dontaudit logger_app vendor_gps_file:file { create };
 dontaudit logger_app vendor_gps_file:file { getattr };
 dontaudit logger_app vendor_gps_file:file { read write open };
 dontaudit logger_app vendor_gps_file:file { setattr };
+# b/264489961
+userdebug_or_eng(`
+  permissive logger_app;
+')

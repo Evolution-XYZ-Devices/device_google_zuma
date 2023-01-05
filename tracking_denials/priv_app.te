@@ -17,3 +17,7 @@ dontaudit priv_app euiccpixel_app:binder { transfer };
 dontaudit priv_app euiccpixel_app:binder { call };
 # b/263185432
 dontaudit priv_app privapp_data_file:file { unlink };
+# b/264490074
+userdebug_or_eng(`
+  permissive priv_app;
+')

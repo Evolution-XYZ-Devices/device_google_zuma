@@ -1,2 +1,6 @@
 # b/262794578
 dontaudit mediaswcodec mediacodec_samsung:binder { call };
+# b/264489679
+userdebug_or_eng(`
+  permissive mediaswcodec;
+')

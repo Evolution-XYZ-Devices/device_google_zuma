@@ -4,3 +4,7 @@ dontaudit hal_neuralnetworks_darwinn sysfs:dir { read };
 dontaudit hal_neuralnetworks_darwinn sysfs:file { getattr };
 dontaudit hal_neuralnetworks_darwinn sysfs:file { open };
 dontaudit hal_neuralnetworks_darwinn sysfs:file { read };
+# b/264489676
+userdebug_or_eng(`
+  permissive hal_neuralnetworks_darwinn;
+')

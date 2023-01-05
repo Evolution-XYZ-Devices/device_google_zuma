@@ -1,0 +1,4 @@
+# b/264489559
+userdebug_or_eng(`
+  permissive hal_fingerprint_default;
+')

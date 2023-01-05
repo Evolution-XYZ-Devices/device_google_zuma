@@ -4,3 +4,7 @@ dontaudit gmscore_app property_type:file *;
 dontaudit gmscore_app property_type:file *;
 # b/260522434
 dontaudit gmscore_app modem_img_file:filesystem { getattr };
+# b/264489521
+userdebug_or_eng(`
+  permissive gmscore_app;
+')

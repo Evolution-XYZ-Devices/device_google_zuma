@@ -23,3 +23,7 @@ dontaudit dumpstate rild:binder { call };
 # b/263048776
 dontaudit dumpstate hal_usb_impl:binder { call };
 dontaudit dumpstate hal_uwb_default:binder { call };
+# b/264489270
+userdebug_or_eng(`
+  permissive dumpstate;
+')

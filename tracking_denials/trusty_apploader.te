@@ -5,3 +5,7 @@ dontaudit trusty_apploader dmabuf_system_heap_device:chr_file { read };
 dontaudit trusty_apploader tee_device:chr_file { ioctl };
 dontaudit trusty_apploader tee_device:chr_file { open };
 dontaudit trusty_apploader tee_device:chr_file { read write };
+# b/264489569
+userdebug_or_eng(`
+  permissive trusty_apploader;
+')

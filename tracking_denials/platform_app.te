@@ -9,3 +9,7 @@ dontaudit platform_app mediacodec_google:binder { call };
 dontaudit platform_app mediacodec_google:binder { transfer };
 dontaudit platform_app mediacodec_samsung:binder { call };
 dontaudit platform_app mediacodec_samsung:binder { transfer };
+# b/264490036
+userdebug_or_eng(`
+  permissive platform_app;
+')

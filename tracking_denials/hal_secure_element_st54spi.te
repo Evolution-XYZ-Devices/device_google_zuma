@@ -1,0 +1,4 @@
+# b/264489677
+userdebug_or_eng(`
+  permissive hal_secure_element_st54spi;
+')

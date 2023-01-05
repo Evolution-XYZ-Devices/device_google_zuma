@@ -23,3 +23,7 @@ dontaudit rlsservice vndbinder_device:chr_file { read };
 dontaudit rlsservice vndbinder_device:chr_file { write };
 dontaudit rlsservice vndservicemanager:binder { call };
 dontaudit rlsservice vndservicemanager:binder { transfer };
+# b/264489641
+userdebug_or_eng(`
+  permissive rlsservice;
+')

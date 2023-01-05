@@ -2,3 +2,7 @@
 dontaudit bootanim system_data_file:dir { search };
 # b/261105374
 dontaudit bootanim default_android_service:service_manager { find };
+# b/264489606
+userdebug_or_eng(`
+  permissive bootanim;
+')

@@ -2,3 +2,7 @@
 dontaudit zygote euiccpixel_app:process { dyntransition };
 # b/261782930
 dontaudit zygote con_monitor_app:process { dyntransition };
+# b/264490077
+userdebug_or_eng(`
+  permissive zygote;
+')

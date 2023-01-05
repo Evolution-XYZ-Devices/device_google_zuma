@@ -46,3 +46,7 @@ dontaudit hal_sensors_default vendor_dynamic_sensor_prop:file { getattr };
 dontaudit hal_sensors_default vendor_dynamic_sensor_prop:file { map };
 dontaudit hal_sensors_default vendor_dynamic_sensor_prop:file { open };
 dontaudit hal_sensors_default vendor_dynamic_sensor_prop:file { read };
+# b/264489637
+userdebug_or_eng(`
+  permissive hal_sensors_default;
+')

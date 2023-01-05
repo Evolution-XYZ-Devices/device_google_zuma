@@ -15,3 +15,7 @@ dontaudit hal_wlc hwservicemanager_prop:file { getattr };
 dontaudit hal_wlc hwservicemanager_prop:file { map };
 dontaudit hal_wlc hwservicemanager_prop:file { open };
 dontaudit hal_wlc hwservicemanager_prop:file { read };
+# b/264489562
+userdebug_or_eng(`
+  permissive hal_wlc;
+')

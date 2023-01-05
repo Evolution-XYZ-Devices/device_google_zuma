@@ -25,3 +25,7 @@ dontaudit system_server mediacodec_samsung:binder { transfer };
 dontaudit system_server hal_camera_default:binder { transfer };
 # b/263305107
 dontaudit system_server hal_camera_default:binder { call };
+# b/264489786
+userdebug_or_eng(`
+  permissive system_server;
+')
