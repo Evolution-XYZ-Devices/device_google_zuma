@@ -33,4 +33,7 @@ dontaudit hal_usb_gadget_impl vendor_usb_config_prop:file { read };
 # b/264489390
 userdebug_or_eng(`
   permissive hal_usb_gadget_impl;
-')
+')# b/264483531
+dontaudit hal_usb_gadget_impl hal_usb_gadget_hwservice:hwservice_manager { add };
+dontaudit hal_usb_gadget_impl hal_usb_gadget_hwservice:hwservice_manager { find };
+dontaudit hal_usb_gadget_impl hidl_base_hwservice:hwservice_manager { add };
