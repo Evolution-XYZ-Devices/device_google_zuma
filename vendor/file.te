@@ -15,3 +15,11 @@ allow bootdevice_sysdev sysfs:filesystem associate;
 
 # WLC
 type sysfs_wlc, sysfs_type, fs_type;
+
+# Vendor sched files
+userdebug_or_eng(`
+    typeattribute proc_vendor_sched mlstrustedobject;
+')
+
+type sysfs_fabric, sysfs_type, fs_type;
+type sysfs_em_profile, sysfs_type, fs_type;

@@ -334,3 +334,9 @@ genfscon sysfs /devices/virtual/wakeup/wakeup                                   
 # Trusty
 genfscon sysfs /module/trusty_virtio/parameters/use_high_wq               u:object_r:sysfs_trusty:s0
 genfscon sysfs /module/trusty_core/parameters/use_high_wq                 u:object_r:sysfs_trusty:s0
+
+# EM Profile
+genfscon sysfs /kernel/pixel_em/active_profile                            u:object_r:sysfs_em_profile:s0
+
+# GPU
+genfscon sysfs /devices/platform/1f000000.mali/hint_min_freq              u:object_r:sysfs_gpu:s0
