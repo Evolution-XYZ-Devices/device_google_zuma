@@ -34,4 +34,6 @@ dontaudit hal_usb_impl sysfs_batteryinfo:file { read };
 # b/264489561
 userdebug_or_eng(`
   permissive hal_usb_impl;
-')
+')# b/264606212
+dontaudit hal_usb_impl hal_thermal_hwservice:hwservice_manager { find };
+dontaudit hal_usb_impl hidl_manager_hwservice:hwservice_manager { find };

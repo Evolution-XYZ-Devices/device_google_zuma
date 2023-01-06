@@ -8,3 +8,5 @@ dontaudit hal_camera_default gxp_device:chr_file { read write };
 userdebug_or_eng(`
   permissive hal_camera_default;
 ')
+# b/264483024
+dontaudit hal_camera_default hal_radioext_hwservice:hwservice_manager { find };

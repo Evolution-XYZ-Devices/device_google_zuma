@@ -17,4 +17,5 @@ dontaudit google_camera_app thermal_service:service_manager { find };
 # b/264490031
 userdebug_or_eng(`
   permissive google_camera_app;
-')
+')# b/264483456
+dontaudit google_camera_app backup_service:service_manager { find };

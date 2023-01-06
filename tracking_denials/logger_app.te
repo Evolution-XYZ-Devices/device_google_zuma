@@ -43,4 +43,5 @@ dontaudit logger_app vendor_gps_file:file { setattr };
 # b/264489961
 userdebug_or_eng(`
   permissive logger_app;
-')
+')# b/264600084
+dontaudit logger_app radio_vendor_data_file:file { read };

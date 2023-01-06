@@ -8,4 +8,7 @@ dontaudit hal_secure_element_uicc hwservicemanager_prop:file { read };
 # b/264489780
 userdebug_or_eng(`
   permissive hal_secure_element_uicc;
-')
+')# b/264600083
+dontaudit hal_secure_element_uicc hal_secure_element_hwservice:hwservice_manager { add };
+dontaudit hal_secure_element_uicc hal_secure_element_hwservice:hwservice_manager { find };
+dontaudit hal_secure_element_uicc hidl_base_hwservice:hwservice_manager { add };
