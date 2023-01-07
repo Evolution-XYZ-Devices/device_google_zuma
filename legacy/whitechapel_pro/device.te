@@ -3,10 +3,6 @@ type sg_device, dev_type;
 type vendor_toe_device, dev_type;
 type lwis_device, dev_type;
 type rls_device, dev_type;
-type sensor_direct_heap_device, dmabuf_heap_device_type, dev_type;
-type faceauth_heap_device, dmabuf_heap_device_type, dev_type;
-type vframe_heap_device, dmabuf_heap_device_type, dev_type;
-type vscaler_heap_device, dmabuf_heap_device_type, dev_type;
 
 # Raw HID device
 type hidraw_device, dev_type;
