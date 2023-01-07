@@ -65,6 +65,7 @@ genfscon sysfs /devices/platform/17000090.devfreq_dsu/devfreq/17000090.devfreq_d
 genfscon sysfs /devices/platform/170000a0.devfreq_bci/devfreq/170000a0.devfreq_bci/time_in_state       u:object_r:sysfs_cpu:s0
 genfscon sysfs /devices/platform/1f000000.mali/time_in_state                                           u:object_r:sysfs_cpu:s0
 genfscon sysfs /devices/platform/1f000000.mali/uid_time_in_state                                       u:object_r:sysfs_cpu:s0
+genfscon sysfs /devices/platform/cpupm/cpupm/time_in_state                                             u:object_r:sysfs_cpu:s0
 
 # Power ODPM
 genfscon sysfs /devices/platform/acpm_mfd_bus@15500000/i2c-0/0-001f/s2mpg14-meter/s2mpg14-odpm/iio:device0/enabled_rails u:object_r:sysfs_odpm:s0
