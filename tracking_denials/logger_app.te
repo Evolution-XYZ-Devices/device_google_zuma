@@ -1,8 +1,3 @@
-# b/260522268
-dontaudit logger_app vendor_modem_prop:file { getattr };
-dontaudit logger_app vendor_modem_prop:file { map };
-dontaudit logger_app vendor_modem_prop:file { open };
-dontaudit logger_app vendor_modem_prop:file { read };
 # b/261519049
 dontaudit logger_app vendor_gps_file:dir { getattr };
 dontaudit logger_app vendor_gps_file:dir { read };
