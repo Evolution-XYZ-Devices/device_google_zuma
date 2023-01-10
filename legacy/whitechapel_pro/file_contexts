@@ -28,16 +28,7 @@
 /vendor/lib(64)?/libgpudataproducer\.so                                     u:object_r:same_process_hal_file:s0
 
 # Devices
-/dev/dma_heap/sensor_direct_heap                                            u:object_r:sensor_direct_heap_device:s0
 /dev/ttySAC0                                                                u:object_r:tty_device:s0
-/dev/dma_heap/faceauth_tpu-secure                                           u:object_r:faceauth_heap_device:s0
-/dev/dma_heap/faimg-secure                                                  u:object_r:faceauth_heap_device:s0
-/dev/dma_heap/famodel-secure                                                u:object_r:faceauth_heap_device:s0
-/dev/dma_heap/faprev-secure                                                 u:object_r:faceauth_heap_device:s0
-/dev/dma_heap/farawimg-secure                                               u:object_r:faceauth_heap_device:s0
-/dev/dma_heap/vframe-secure                                                 u:object_r:dmabuf_system_secure_heap_device:s0
-/dev/dma_heap/vscaler-secure                                                u:object_r:vscaler_heap_device:s0
-/dev/dma_heap/vstream-secure                                                u:object_r:dmabuf_system_secure_heap_device:s0
 /dev/bigwave                                                                u:object_r:video_device:s0
 /dev/stmvl53l1_ranging                                                      u:object_r:rls_device:s0
 /dev/watchdog0                                                              u:object_r:watchdog_device:s0
