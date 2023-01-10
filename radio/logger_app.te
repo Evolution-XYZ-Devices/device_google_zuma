@@ -1,4 +1,6 @@
 userdebug_or_eng(`
   allow logger_app radio_vendor_data_file:file create_file_perms;
   allow logger_app radio_vendor_data_file:dir create_dir_perms;
+
+  set_prop(logger_app, vendor_ssrdump_prop)
 ')
