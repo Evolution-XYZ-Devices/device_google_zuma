@@ -6,3 +6,5 @@ dontaudit vold modem_userdata_file:dir { ioctl };
 dontaudit vold modem_userdata_file:dir { open };
 dontaudit vold modem_userdata_file:dir { read };
 dontaudit vold sysfs_scsi_devices_0000:file { write };
+# b/264972759
+dontaudit vold dumpstate:fd { use };

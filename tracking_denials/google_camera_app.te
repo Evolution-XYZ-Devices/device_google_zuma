@@ -19,3 +19,7 @@ userdebug_or_eng(`
   permissive google_camera_app;
 ')# b/264483456
 dontaudit google_camera_app backup_service:service_manager { find };
+# b/264600171
+dontaudit google_camera_app audio_service:service_manager { find };
+dontaudit google_camera_app legacy_permission_service:service_manager { find };
+dontaudit google_camera_app permission_checker_service:service_manager { find };

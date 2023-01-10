@@ -20,4 +20,5 @@ dontaudit hal_dumpstate_default vndservicemanager:binder { call };
 # b/264489795
 userdebug_or_eng(`
   permissive hal_dumpstate_default;
-')
+')# b/264972626
+dontaudit hal_dumpstate_default vendor_displaycolor_service:service_manager { find };
