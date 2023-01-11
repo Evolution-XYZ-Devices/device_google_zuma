@@ -68,7 +68,12 @@ allow hal_camera_default sysfs_leds:file r_file_perms;
 
 # Allow camera HAL to query preferred camera frequencies from the radio HAL
 # extensions to avoid interference with cellular antennas.
+allow hal_camera_default hal_radioext_hwservice:hwservice_manager find;
 binder_call(hal_camera_default, hal_radioext_default);
+
+# For camera hal to talk with rlsservice
+allow hal_camera_default rls_service:service_manager find;
+binder_call(hal_camera_default, rlsservice)
 
 # Allow camera HAL to send trace packets to Perfetto
 userdebug_or_eng(`perfetto_producer(hal_camera_default)')
