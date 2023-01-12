@@ -1,6 +1,0 @@
-# b/261650953
-dontaudit usbd hal_usb_gadget_impl:binder { call };
-# b/264489963
-userdebug_or_eng(`
-  permissive usbd;
-')

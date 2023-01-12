@@ -2,10 +2,6 @@
 persist.vendor.tcpdump.log.alwayson        u:object_r:vendor_tcpdump_log_prop:s0
 vendor.tcpdump.                            u:object_r:vendor_tcpdump_log_prop:s0
 
-# USB HAL
-persist.vendor.usb.                        u:object_r:vendor_usb_config_prop:s0
-vendor.usb.                                u:object_r:vendor_usb_config_prop:s0
-
 # test battery profile
 persist.vendor.testing_battery_profile     u:object_r:vendor_battery_profile_prop:s0
 
