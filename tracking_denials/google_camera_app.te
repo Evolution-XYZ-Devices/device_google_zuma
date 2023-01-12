@@ -23,3 +23,5 @@ dontaudit google_camera_app backup_service:service_manager { find };
 dontaudit google_camera_app audio_service:service_manager { find };
 dontaudit google_camera_app legacy_permission_service:service_manager { find };
 dontaudit google_camera_app permission_checker_service:service_manager { find };
+# b/265220235
+dontaudit google_camera_app virtual_device_service:service_manager { find };
