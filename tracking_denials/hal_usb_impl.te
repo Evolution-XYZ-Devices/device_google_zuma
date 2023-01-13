@@ -37,3 +37,6 @@ userdebug_or_eng(`
 ')# b/264606212
 dontaudit hal_usb_impl hal_thermal_hwservice:hwservice_manager { find };
 dontaudit hal_usb_impl hidl_manager_hwservice:hwservice_manager { find };
+# b/265383532
+dontaudit hal_usb_impl sysfs_batteryinfo:dir { open };
+dontaudit hal_usb_impl sysfs_batteryinfo:dir { read };

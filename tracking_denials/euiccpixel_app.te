@@ -68,4 +68,7 @@ dontaudit euiccpixel_app default_android_service:service_manager { find };
 # b/264489745
 userdebug_or_eng(`
   permissive euiccpixel_app;
-')
+')# b/265384119
+dontaudit euiccpixel_app gmscore_app:binder { call };
+dontaudit euiccpixel_app gmscore_app:binder { transfer };
+dontaudit euiccpixel_app virtual_device_service:service_manager { find };
