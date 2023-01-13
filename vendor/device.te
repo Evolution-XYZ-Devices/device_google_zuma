@@ -2,6 +2,7 @@ type persist_block_device, dev_type;
 type custom_ab_block_device, dev_type;
 type devinfo_block_device, dev_type;
 type mfg_data_block_device, dev_type;
+type ufs_internal_block_device, dev_type;
 type logbuffer_device, dev_type;
 type gxp_device, dev_type;
 type fingerprint_device, dev_type;
