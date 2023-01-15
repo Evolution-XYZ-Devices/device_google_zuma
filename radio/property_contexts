@@ -53,3 +53,7 @@ vendor.config.debug.                       u:object_r:vendor_telephony_app_prop:
 # for gps
 vendor.gps.                                u:object_r:vendor_gps_prop:s0
 persist.vendor.gps.                        u:object_r:vendor_gps_prop:s0
+
+# Tcpdump_logger
+persist.vendor.tcpdump.log.alwayson        u:object_r:vendor_tcpdump_log_prop:s0
+vendor.tcpdump.                            u:object_r:vendor_tcpdump_log_prop:s0
