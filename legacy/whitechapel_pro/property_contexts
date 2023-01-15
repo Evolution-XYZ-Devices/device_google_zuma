@@ -15,18 +15,9 @@ persist.vendor.se.                         u:object_r:vendor_secure_element_prop
 ro.vendor.hwc.drm.device                   u:object_r:vendor_display_prop:s0
 persist.vendor.display.                    u:object_r:vendor_display_prop:s0
 
-# for logger app
-vendor.pixellogger.                        u:object_r:vendor_logger_prop:s0
-persist.vendor.pixellogger.                u:object_r:vendor_logger_prop:s0
-persist.vendor.verbose_logging_enabled     u:object_r:vendor_logger_prop:s0
-
 # vendor default
 ro.vendor.sys.                             u:object_r:vendor_ro_sys_default_prop:s0
 persist.vendor.sys.                        u:object_r:vendor_persist_sys_default_prop:s0
-
-# for gps
-vendor.gps.                                u:object_r:vendor_gps_prop:s0
-persist.vendor.gps.                        u:object_r:vendor_gps_prop:s0
 
 #uwb
 ro.vendor.uwb.calibration.                 u:object_r:vendor_uwb_calibration_prop:s0 exact string
