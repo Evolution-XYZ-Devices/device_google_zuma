@@ -1,7 +1,0 @@
-# b/262794577
-dontaudit mediaserver mediacodec_google:binder { call };
-dontaudit mediaserver mediacodec_samsung:binder { call };
-# b/264489523
-userdebug_or_eng(`
-  permissive mediaserver;
-')
