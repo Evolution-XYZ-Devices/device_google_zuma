@@ -1,3 +1,5 @@
 type google_camera_app, domain, coredomain;
 app_domain(google_camera_app)
 
+# Allows camera app to access the GXP device.
+allow google_camera_app gxp_device:chr_file rw_file_perms;
