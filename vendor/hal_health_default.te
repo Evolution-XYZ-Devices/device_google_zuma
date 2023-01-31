@@ -11,4 +11,5 @@ allow hal_health_default fwk_stats_service:service_manager find;
 allow hal_health_default sysfs_scsi_devices_0000:dir r_dir_perms;
 allow hal_health_default sysfs_scsi_devices_0000:file rw_file_perms;
 
+allow hal_health_default sysfs_wlc:dir search;
 allow hal_health_default sysfs_batteryinfo:file w_file_perms;
