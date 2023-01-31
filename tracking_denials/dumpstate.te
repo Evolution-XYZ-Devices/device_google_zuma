@@ -26,4 +26,6 @@ dontaudit dumpstate hal_uwb_default:binder { call };
 # b/264489270
 userdebug_or_eng(`
   permissive dumpstate;
-')
+')# b/267260717
+dontaudit dumpstate hal_cas_default:binder { call };
+dontaudit dumpstate hal_sensors_default:binder { call };

@@ -1,0 +1,2 @@
+# b/267261163
+dontaudit hal_usb_impl dumpstate:fd { use };

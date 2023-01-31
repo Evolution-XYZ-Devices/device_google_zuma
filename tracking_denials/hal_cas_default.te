@@ -1,0 +1,2 @@
+# b/267260716
+dontaudit hal_cas_default dumpstate:fd { use };
