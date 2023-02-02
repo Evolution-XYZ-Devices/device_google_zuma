@@ -1,30 +1,14 @@
 # b/260366439
-dontaudit logger_app radio_vendor_data_file:dir { search };
 dontaudit logger_app vendor_ssrdump_prop:file { getattr };
 dontaudit logger_app vendor_ssrdump_prop:file { map };
 dontaudit logger_app vendor_ssrdump_prop:file { open };
 dontaudit logger_app vendor_ssrdump_prop:file { read };
 # b/260522268
-dontaudit logger_app radio_vendor_data_file:dir { getattr };
-dontaudit logger_app radio_vendor_data_file:dir { open };
-dontaudit logger_app radio_vendor_data_file:dir { read };
-dontaudit logger_app radio_vendor_data_file:dir { setattr };
 dontaudit logger_app vendor_modem_prop:file { getattr };
 dontaudit logger_app vendor_modem_prop:file { map };
 dontaudit logger_app vendor_modem_prop:file { open };
 dontaudit logger_app vendor_modem_prop:file { read };
-# b/260769144
-dontaudit logger_app radio_vendor_data_file:dir { add_name };
-dontaudit logger_app radio_vendor_data_file:dir { remove_name };
-dontaudit logger_app radio_vendor_data_file:dir { write };
-dontaudit logger_app radio_vendor_data_file:file { create };
-dontaudit logger_app radio_vendor_data_file:file { unlink };
-dontaudit logger_app radio_vendor_data_file:file { write open };
 # b/261519049
-dontaudit logger_app radio_vendor_data_file:dir { create };
-dontaudit logger_app radio_vendor_data_file:dir { rmdir };
-dontaudit logger_app radio_vendor_data_file:file { getattr };
-dontaudit logger_app radio_vendor_data_file:file { setattr };
 dontaudit logger_app vendor_gps_file:dir { getattr };
 dontaudit logger_app vendor_gps_file:dir { read };
 dontaudit logger_app vendor_gps_file:dir { search };
@@ -43,5 +27,4 @@ dontaudit logger_app vendor_gps_file:file { setattr };
 # b/264489961
 userdebug_or_eng(`
   permissive logger_app;
-')# b/264600084
-dontaudit logger_app radio_vendor_data_file:file { read };
+')
