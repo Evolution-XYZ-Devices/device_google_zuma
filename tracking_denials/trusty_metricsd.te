@@ -1,4 +1,0 @@
-# b/264489526
-userdebug_or_eng(`
-  permissive trusty_metricsd;
-')
