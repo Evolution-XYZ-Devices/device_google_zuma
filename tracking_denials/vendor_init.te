@@ -9,8 +9,6 @@ dontaudit vendor_init bootdevice_sysdev:file { create };
 dontaudit vendor_init modem_img_file:filesystem { getattr };
 dontaudit vendor_init proc_dirty:file { write };
 dontaudit vendor_init proc_sched:file { write };
-# b/263525155
-dontaudit vendor_init system_boot_reason_prop:file { read };
 # b/264490095
 userdebug_or_eng(`
   permissive vendor_init;
