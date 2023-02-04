@@ -1,59 +1,3 @@
-# b/260522413
-dontaudit euiccpixel_app activity_service:service_manager { find };
-dontaudit euiccpixel_app data_file_type:dir *;
-dontaudit euiccpixel_app data_file_type:file *;
-dontaudit euiccpixel_app content_capture_service:service_manager { find };
-dontaudit euiccpixel_app dalvikcache_data_file:dir { getattr };
-dontaudit euiccpixel_app dalvikcache_data_file:dir { search };
-dontaudit euiccpixel_app game_service:service_manager { find };
-dontaudit euiccpixel_app graphics_config_prop:file { getattr };
-dontaudit euiccpixel_app graphics_config_prop:file { map };
-dontaudit euiccpixel_app graphics_config_prop:file { open };
-dontaudit euiccpixel_app graphics_config_prop:file { read };
-dontaudit euiccpixel_app mnt_expand_file:dir { getattr };
-dontaudit euiccpixel_app netstats_service:service_manager { find };
-dontaudit euiccpixel_app resourcecache_data_file:dir { search };
-dontaudit euiccpixel_app resourcecache_data_file:file { getattr };
-dontaudit euiccpixel_app resourcecache_data_file:file { map };
-dontaudit euiccpixel_app resourcecache_data_file:file { open };
-dontaudit euiccpixel_app resourcecache_data_file:file { read };
-dontaudit euiccpixel_app servicemanager:binder { call };
-dontaudit euiccpixel_app statsd:unix_dgram_socket { sendto };
-dontaudit euiccpixel_app statsdw_socket:sock_file { write };
-dontaudit euiccpixel_app system_file:file { execute };
-dontaudit euiccpixel_app system_file:file { getattr };
-dontaudit euiccpixel_app system_file:file { map };
-dontaudit euiccpixel_app system_file:file { open };
-dontaudit euiccpixel_app system_file:file { read };
-dontaudit euiccpixel_app system_server:binder { call };
-dontaudit euiccpixel_app system_server:binder { transfer };
-dontaudit euiccpixel_app system_server:fd { use };
-dontaudit euiccpixel_app system_userdir_file:dir { search };
-dontaudit euiccpixel_app tmpfs:file { execute };
-dontaudit euiccpixel_app tmpfs:file { map };
-dontaudit euiccpixel_app tmpfs:file { read };
-dontaudit euiccpixel_app tmpfs:file { write };
-dontaudit euiccpixel_app user_profile_data_file:dir { search };
-dontaudit euiccpixel_app user_profile_data_file:file { getattr };
-# b/260769064
-dontaudit euiccpixel_app priv_app:binder { call };
-dontaudit euiccpixel_app priv_app:binder { transfer };
-dontaudit euiccpixel_app secure_element:binder { call };
-dontaudit euiccpixel_app secure_element:binder { transfer };
-# b/260922186
-dontaudit euiccpixel_app init:unix_stream_socket { connectto };
-dontaudit euiccpixel_app priv_app:binder { call };
-dontaudit euiccpixel_app priv_app:binder { transfer };
-dontaudit euiccpixel_app property_socket:sock_file { write };
-dontaudit euiccpixel_app secure_element:binder { call };
-dontaudit euiccpixel_app secure_element:binder { transfer };
-# b/261516808
-dontaudit euiccpixel_app dck_prop:file { getattr };
-dontaudit euiccpixel_app dck_prop:file { open };
-dontaudit euiccpixel_app dck_prop:file { read };
-dontaudit euiccpixel_app vendor_secure_element_prop:property_service { set };
-# b/261651113
-dontaudit euiccpixel_app dck_prop:file { map };
 # b/261933311
 dontaudit euiccpixel_app dumpstate:fd { use };
 dontaudit euiccpixel_app dumpstate:fifo_file { append };
@@ -61,14 +5,5 @@ dontaudit euiccpixel_app dumpstate:fifo_file { write };
 dontaudit euiccpixel_app system_server:fifo_file { write };
 dontaudit euiccpixel_app tombstoned:unix_stream_socket { connectto };
 dontaudit euiccpixel_app tombstoned_java_trace_socket:sock_file { write };
-# b/262451641
-dontaudit euiccpixel_app permission_checker_service:service_manager { find };
 # b/265286368
 dontaudit euiccpixel_app default_android_service:service_manager { find };
-# b/264489745
-userdebug_or_eng(`
-  permissive euiccpixel_app;
-')# b/265384119
-dontaudit euiccpixel_app gmscore_app:binder { call };
-dontaudit euiccpixel_app gmscore_app:binder { transfer };
-dontaudit euiccpixel_app virtual_device_service:service_manager { find };
