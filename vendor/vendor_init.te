@@ -1,2 +1,4 @@
 # Fingerprint property
 set_prop(vendor_init, vendor_fingerprint_prop)
+# Battery harness mode property
+set_prop(vendor_init, vendor_battery_defender_prop)
