@@ -1,9 +1,4 @@
-# b/261933311
-dontaudit euiccpixel_app dumpstate:fd { use };
-dontaudit euiccpixel_app dumpstate:fifo_file { append };
-dontaudit euiccpixel_app dumpstate:fifo_file { write };
-dontaudit euiccpixel_app system_server:fifo_file { write };
-dontaudit euiccpixel_app tombstoned:unix_stream_socket { connectto };
-dontaudit euiccpixel_app tombstoned_java_trace_socket:sock_file { write };
 # b/265286368
 dontaudit euiccpixel_app default_android_service:service_manager { find };
+# b/269218505
+dontaudit euiccpixel_app default_prop:file { read };
