@@ -7,7 +7,6 @@ dontaudit vendor_init sg_device:chr_file { getattr };
 # b/263185566
 dontaudit vendor_init bootdevice_sysdev:file { create };
 dontaudit vendor_init modem_img_file:filesystem { getattr };
-dontaudit vendor_init proc_dirty:file { write };
 dontaudit vendor_init proc_sched:file { write };
 # b/264490095
 userdebug_or_eng(`
