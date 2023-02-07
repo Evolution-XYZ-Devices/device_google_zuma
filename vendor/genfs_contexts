@@ -11,6 +11,17 @@ genfscon sysfs /devices/platform/17000080.devfreq_bo/devfreq/17000080.devfreq_bo
 # EdgeTPU
 genfscon sysfs /devices/platform/1ce00000.rio                                                                             u:object_r:sysfs_edgetpu:s0
 
+# Extcon
+genfscon sysfs /devices/platform/10cb0000.hsi2c/i2c-0/0-0025/extcon/extcon0   u:object_r:sysfs_extcon:s0
+genfscon sysfs /devices/platform/10cb0000.hsi2c/i2c-1/1-0025/extcon/extcon0   u:object_r:sysfs_extcon:s0
+genfscon sysfs /devices/platform/10cb0000.hsi2c/i2c-2/2-0025/extcon/extcon0   u:object_r:sysfs_extcon:s0
+genfscon sysfs /devices/platform/10cb0000.hsi2c/i2c-3/3-0025/extcon/extcon0   u:object_r:sysfs_extcon:s0
+genfscon sysfs /devices/platform/10cb0000.hsi2c/i2c-4/4-0025/extcon/extcon0   u:object_r:sysfs_extcon:s0
+genfscon sysfs /devices/platform/10cb0000.hsi2c/i2c-5/5-0025/extcon/extcon0   u:object_r:sysfs_extcon:s0
+genfscon sysfs /devices/platform/10cb0000.hsi2c/i2c-6/6-0025/extcon/extcon0   u:object_r:sysfs_extcon:s0
+genfscon sysfs /devices/platform/10cb0000.hsi2c/i2c-7/7-0025/extcon/extcon0   u:object_r:sysfs_extcon:s0
+genfscon sysfs /devices/platform/10cb0000.hsi2c/i2c-8/8-0025/extcon/extcon0   u:object_r:sysfs_extcon:s0
+
 # Storage
 genfscon sysfs /devices/platform/13200000.ufs/slowio_read_cnt           u:object_r:sysfs_scsi_devices_0000:s0
 genfscon sysfs /devices/platform/13200000.ufs/slowio_write_cnt          u:object_r:sysfs_scsi_devices_0000:s0
