@@ -1,0 +1,2 @@
+type systemui_app, domain;
+app_domain(systemui_app)

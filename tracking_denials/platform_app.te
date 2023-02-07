@@ -2,9 +2,6 @@
 dontaudit platform_app default_android_service:service_manager { find };
 # b/260922162
 dontaudit platform_app default_android_service:service_manager { find };
-# b/262794428
-dontaudit platform_app hal_wlc:binder { call };
-dontaudit platform_app hal_wlc:binder { transfer };
 # b/264490036
 userdebug_or_eng(`
   permissive platform_app;
