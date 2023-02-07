@@ -104,6 +104,7 @@
 /dev/lwis-act-cornerfolk                                                    u:object_r:lwis_device:s0
 /dev/lwis-act-cornerfolk-dokkaebi                                           u:object_r:lwis_device:s0
 /dev/lwis-act-cornerfolk-oksoko                                             u:object_r:lwis_device:s0
+/dev/lwis-act-cornerfolk-sandworm                                           u:object_r:lwis_device:s0
 /dev/lwis-be-core                                                           u:object_r:lwis_device:s0
 /dev/lwis-csi                                                               u:object_r:lwis_device:s0
 /dev/lwis-dpm                                                               u:object_r:lwis_device:s0
