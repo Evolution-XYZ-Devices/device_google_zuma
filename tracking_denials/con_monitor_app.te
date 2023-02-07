@@ -32,3 +32,5 @@ dontaudit con_monitor_app system_file:file { execute };
 userdebug_or_eng(`
   permissive con_monitor_app;
 ')
+# b/267843291
+dontaudit con_monitor_app resourcecache_data_file:file { read };

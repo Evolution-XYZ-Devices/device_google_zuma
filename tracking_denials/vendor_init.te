@@ -15,3 +15,11 @@ dontaudit vendor_init system_boot_reason_prop:file { read };
 userdebug_or_eng(`
   permissive vendor_init;
 ')
+# b/267843409
+dontaudit vendor_init default_prop:property_service { set };
+dontaudit vendor_init logpersistd_logging_prop:property_service { set };
+dontaudit vendor_init vendor_camera_debug_prop:property_service { set };
+dontaudit vendor_init vendor_logger_prop:property_service { set };
+dontaudit vendor_init vendor_slog_prop:property_service { set };
+dontaudit vendor_init vendor_ssrdump_prop:property_service { set };
+dontaudit vendor_init vendor_vibrator_prop:property_service { set };
