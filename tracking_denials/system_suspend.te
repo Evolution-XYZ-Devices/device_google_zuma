@@ -1,21 +1,4 @@
-# b/260366031
-dontaudit system_suspend_server sysfs:dir { open };
-dontaudit system_suspend_server sysfs:dir { read };
-dontaudit system_suspend_server sysfs:file { getattr };
-dontaudit system_suspend_server sysfs:file { open };
-dontaudit system_suspend_server sysfs:file { read };
-dontaudit system_suspend_server sysfs_aoc:dir { open };
-dontaudit system_suspend_server sysfs_aoc:dir { read };
-dontaudit system_suspend_server sysfs_aoc:file { getattr };
-dontaudit system_suspend_server sysfs_aoc:file { open };
-dontaudit system_suspend_server sysfs_aoc:file { read };
 # b/261105356
 dontaudit system_suspend_server chre:binder { transfer };
 # b/263305203
 dontaudit system_suspend_server tee:binder { transfer };
-# b/264204215
-dontaudit system_suspend_server sysfs_batteryinfo:dir { open };
-dontaudit system_suspend_server sysfs_batteryinfo:dir { read };
-dontaudit system_suspend_server sysfs_batteryinfo:file { getattr };
-dontaudit system_suspend_server sysfs_batteryinfo:file { open };
-dontaudit system_suspend_server sysfs_batteryinfo:file { read };
