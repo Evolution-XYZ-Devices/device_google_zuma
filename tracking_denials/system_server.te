@@ -16,11 +16,6 @@ dontaudit system_server hal_usb_impl:binder { call };
 dontaudit system_server hal_usb_impl:binder { transfer };
 # b/262455682
 dontaudit system_server con_monitor_app:process { setsched };
-# b/262794938
-dontaudit system_server mediacodec_google:binder { call };
-dontaudit system_server mediacodec_google:binder { transfer };
-dontaudit system_server mediacodec_samsung:binder { call };
-dontaudit system_server mediacodec_samsung:binder { transfer };
 # b/263184920
 dontaudit system_server hal_camera_default:binder { transfer };
 # b/263305107
