@@ -9,11 +9,6 @@ dontaudit system_server euiccpixel_app:process { setsched };
 # b/261519050
 dontaudit system_server con_monitor_app:binder { call };
 dontaudit system_server con_monitor_app:binder { transfer };
-# b/261651009
-dontaudit system_server hal_usb_gadget_impl:binder { call };
-dontaudit system_server hal_usb_gadget_impl:binder { transfer };
-dontaudit system_server hal_usb_impl:binder { call };
-dontaudit system_server hal_usb_impl:binder { transfer };
 # b/262455682
 dontaudit system_server con_monitor_app:process { setsched };
 # b/264489786
