@@ -2,9 +2,6 @@
 dontaudit hal_uwb_default device:chr_file { ioctl };
 dontaudit hal_uwb_default device:chr_file { open };
 dontaudit hal_uwb_default device:chr_file { read write };
-# b/263048994
-dontaudit hal_uwb_default dumpstate:fd { use };
-dontaudit hal_uwb_default dumpstate:fifo_file { write };
 # b/264489750
 userdebug_or_eng(`
   permissive hal_uwb_default;
