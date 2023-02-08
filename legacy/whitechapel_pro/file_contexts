@@ -35,7 +35,6 @@
 /dev/dit2                                                                   u:object_r:vendor_toe_device:s0
 /dev/sg1                                                                    u:object_r:sg_device:s0
 /dev/st21nfc                                                                u:object_r:nfc_device:s0
-/dev/logbuffer_tcpm                                                         u:object_r:logbuffer_device:s0
 /dev/sys/block/bootdevice(/.*)?                                             u:object_r:bootdevice_sysdev:s0
 /dev/socket/chre                                                            u:object_r:chre_socket:s0
 /dev/block/sda                                                              u:object_r:sda_block_device:s0
