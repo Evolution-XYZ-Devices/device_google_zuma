@@ -5,7 +5,6 @@ con_monitor_app dalvikcache_data_file file b/264483670
 con_monitor_app mnt_expand_file dir b/264483670
 con_monitor_app system_data_file lnk_file b/264483670
 dumpstate app_zygote process b/264483390
-dumpstate hal_wireless_charger binder b/264483390
 google_camera_app audio_service service_manager b/264600171
 google_camera_app backup_service service_manager b/264483456
 google_camera_app legacy_permission_service service_manager b/264600171
@@ -24,8 +23,7 @@ hal_usb_impl hal_thermal_hwservice hwservice_manager b/264482981
 hal_usb_impl hal_thermal_hwservice hwservice_manager b/264600052
 hal_usb_impl hidl_manager_hwservice hwservice_manager b/264482981
 hal_usb_impl hidl_manager_hwservice hwservice_manager b/264600052
-hal_wireless_charger dumpstate fd b/264483533
-hal_wireless_charger dumpstate fifo_file b/264483533
+hal_vibrator_default aac_drc_prop file b/264483356
 logger_app radio_vendor_data_file file b/264600084
 logger_app vendor_logger_prop file b/264600053
 logger_app vendor_modem_prop property_service b/264600053
@@ -35,7 +33,6 @@ pixelstats_vendor sysfs_pixelstats file b/264483319
 pixelstats_vendor sysfs_pixelstats file b/264483568
 platform_app bootanim_system_prop property_service b/264483532
 servicemanager hal_fingerprint_default binder b/264483753
-shell sysfs_wlc dir b/264483152
 ssr_detector_app system_app_data_file dir b/264483352
 ssr_detector_app system_app_data_file file b/264483352
 system_server default_android_service service_manager b/264483754

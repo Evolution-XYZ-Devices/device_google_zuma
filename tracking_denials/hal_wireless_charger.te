@@ -1,9 +1,0 @@
-# b/263429589
-dontaudit hal_wireless_charger sysfs:file { getattr };
-dontaudit hal_wireless_charger sysfs:file { open };
-dontaudit hal_wireless_charger sysfs:file { read };
-dontaudit hal_wireless_charger sysfs:file { write };
-# b/264489610
-userdebug_or_eng(`
-  permissive hal_wireless_charger;
-')
