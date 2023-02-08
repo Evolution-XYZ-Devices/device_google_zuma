@@ -13,4 +13,3 @@ userdebug_or_eng(`
 # b/267843409
 dontaudit vendor_init default_prop:property_service { set };
 dontaudit vendor_init vendor_camera_debug_prop:property_service { set };
-dontaudit vendor_init vendor_slog_prop:property_service { set };
