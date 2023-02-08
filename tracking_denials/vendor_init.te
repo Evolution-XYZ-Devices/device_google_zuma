@@ -6,7 +6,6 @@ dontaudit vendor_init vendor_init:lockdown { integrity };
 dontaudit vendor_init sg_device:chr_file { getattr };
 # b/263185566
 dontaudit vendor_init bootdevice_sysdev:file { create };
-dontaudit vendor_init proc_sched:file { write };
 # b/264490095
 userdebug_or_eng(`
   permissive vendor_init;
