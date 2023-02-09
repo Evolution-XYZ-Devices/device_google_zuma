@@ -9,7 +9,17 @@ genfscon sysfs /devices/platform/17000070.devfreq_mfc/devfreq/17000070.devfreq_m
 genfscon sysfs /devices/platform/17000080.devfreq_bo/devfreq/17000080.devfreq_bo/cur_freq               u:object_r:sysfs_devfreq_cur:s0
 
 # EdgeTPU
-genfscon sysfs /devices/platform/1ce00000.rio                                                                             u:object_r:sysfs_edgetpu:s0
+genfscon sysfs /devices/platform/1ce00000.rio                           u:object_r:sysfs_edgetpu:s0
+
+# debugfs
+genfscon debugfs /google_charger                                        u:object_r:vendor_charger_debugfs:s0
+genfscon debugfs /max77729_pmic                                         u:object_r:vendor_charger_debugfs:s0
+genfscon debugfs /max77759_chg                                          u:object_r:vendor_charger_debugfs:s0
+genfscon debugfs /gvotables                                             u:object_r:vendor_votable_debugfs:s0
+genfscon debugfs /google_battery                                        u:object_r:vendor_battery_debugfs:s0
+genfscon debugfs /pm_genpd/pm_genpd_summary                             u:object_r:vendor_pm_genpd_debugfs:s0
+genfscon debugfs /usb                                                   u:object_r:vendor_usb_debugfs:s0
+genfscon debugfs /maxfg                                                 u:object_r:vendor_maxfg_debugfs:s0
 
 # Extcon
 genfscon sysfs /devices/platform/10cb0000.hsi2c/i2c-0/0-0025/extcon/extcon0   u:object_r:sysfs_extcon:s0
@@ -81,6 +91,9 @@ genfscon sysfs /devices/platform/170000a0.devfreq_bci/devfreq/170000a0.devfreq_b
 genfscon sysfs /devices/platform/1f000000.mali/time_in_state                                           u:object_r:sysfs_cpu:s0
 genfscon sysfs /devices/platform/1f000000.mali/uid_time_in_state                                       u:object_r:sysfs_cpu:s0
 genfscon sysfs /devices/platform/cpupm/cpupm/time_in_state                                             u:object_r:sysfs_cpu:s0
+
+# ACPM
+genfscon sysfs /devices/platform/acpm_stats                                                            u:object_r:sysfs_acpm_stats:s0
 
 # Power ODPM
 genfscon sysfs /devices/platform/acpm_mfd_bus@15500000/i2c-0/0-001f/s2mpg14-meter/s2mpg14-odpm/iio:device0/enabled_rails u:object_r:sysfs_odpm:s0
@@ -168,6 +181,16 @@ genfscon sysfs /devices/platform/10cb0000.hsi2c/i2c-6/6-0057/power_supply       
 genfscon sysfs /devices/platform/10cb0000.hsi2c/i2c-7/7-0057/power_supply               u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/10cb0000.hsi2c/i2c-8/8-0057/power_supply               u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/10cb0000.hsi2c/i2c-9/9-0057/power_supply               u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/10cb0000.hsi2c/i2c-0/0-0057/registers_dump             u:object_r:sysfs_power_dump:s0
+genfscon sysfs /devices/platform/10cb0000.hsi2c/i2c-1/1-0057/registers_dump             u:object_r:sysfs_power_dump:s0
+genfscon sysfs /devices/platform/10cb0000.hsi2c/i2c-2/2-0057/registers_dump             u:object_r:sysfs_power_dump:s0
+genfscon sysfs /devices/platform/10cb0000.hsi2c/i2c-3/3-0057/registers_dump             u:object_r:sysfs_power_dump:s0
+genfscon sysfs /devices/platform/10cb0000.hsi2c/i2c-4/4-0057/registers_dump             u:object_r:sysfs_power_dump:s0
+genfscon sysfs /devices/platform/10cb0000.hsi2c/i2c-5/5-0057/registers_dump             u:object_r:sysfs_power_dump:s0
+genfscon sysfs /devices/platform/10cb0000.hsi2c/i2c-6/6-0057/registers_dump             u:object_r:sysfs_power_dump:s0
+genfscon sysfs /devices/platform/10cb0000.hsi2c/i2c-7/7-0057/registers_dump             u:object_r:sysfs_power_dump:s0
+genfscon sysfs /devices/platform/10cb0000.hsi2c/i2c-8/8-0057/registers_dump             u:object_r:sysfs_power_dump:s0
+genfscon sysfs /devices/platform/10cb0000.hsi2c/i2c-9/9-0057/registers_dump             u:object_r:sysfs_power_dump:s0
 genfscon sysfs /devices/platform/10cb0000.hsi2c/i2c-0/0-0065/power_supply               u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/10cb0000.hsi2c/i2c-1/1-0065/power_supply               u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/10cb0000.hsi2c/i2c-2/2-0065/power_supply               u:object_r:sysfs_batteryinfo:s0
