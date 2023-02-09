@@ -2,8 +2,6 @@
 dontaudit kernel same_process_hal_file:file { open };
 dontaudit kernel same_process_hal_file:file { read };
 dontaudit kernel vendor_regmap_debugfs:dir { search };
-# b/261650972
-dontaudit kernel vendor_battery_debugfs:dir { search };
 # b/261933155
 dontaudit kernel vendor_fw_file:file { getattr };
 # b/262794429
