@@ -8,3 +8,6 @@ set_prop(vendor_init, logpersistd_logging_prop)
 allow vendor_init proc_dirty:file w_file_perms;
 allow vendor_init proc_sched:file w_file_perms;
 allow vendor_init modem_img_file:filesystem { getattr };
+
+# Audio property
+set_prop(vendor_init, vendor_audio_prop)
