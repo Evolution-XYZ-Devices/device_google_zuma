@@ -1,8 +1,6 @@
 # b/260366195
 dontaudit vendor_init debugfs_trace_marker:file { getattr };
 dontaudit vendor_init vendor_init:capability2 { block_suspend };
-# b/260522244
-dontaudit vendor_init sg_device:chr_file { getattr };
 # b/264490095
 userdebug_or_eng(`
   permissive vendor_init;
