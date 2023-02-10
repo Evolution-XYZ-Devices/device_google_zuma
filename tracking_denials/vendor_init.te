@@ -4,8 +4,6 @@ dontaudit vendor_init vendor_init:capability2 { block_suspend };
 dontaudit vendor_init vendor_init:lockdown { integrity };
 # b/260522244
 dontaudit vendor_init sg_device:chr_file { getattr };
-# b/263185566
-dontaudit vendor_init bootdevice_sysdev:file { create };
 # b/264490095
 userdebug_or_eng(`
   permissive vendor_init;
