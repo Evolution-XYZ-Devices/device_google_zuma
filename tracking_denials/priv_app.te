@@ -20,4 +20,6 @@ dontaudit priv_app privapp_data_file:file { unlink };
 # b/264490074
 userdebug_or_eng(`
   permissive priv_app;
-')
+')# b/268572216
+dontaudit priv_app privapp_data_file:dir { add_name };
+dontaudit priv_app privapp_data_file:dir { remove_name };
