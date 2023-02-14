@@ -23,9 +23,6 @@ hal_usb_impl hal_thermal_hwservice hwservice_manager b/264482981
 hal_usb_impl hal_thermal_hwservice hwservice_manager b/264600052
 hal_usb_impl hidl_manager_hwservice hwservice_manager b/264482981
 hal_usb_impl hidl_manager_hwservice hwservice_manager b/264600052
-logger_app radio_vendor_data_file file b/264600084
-logger_app vendor_logger_prop file b/264600053
-logger_app vendor_modem_prop property_service b/264600053
 mtectrl unlabeled dir b/264483752
 pixelstats_vendor servicemanager binder b/264483357
 pixelstats_vendor sysfs_pixelstats file b/264483319
