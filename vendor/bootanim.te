@@ -1,0 +1,1 @@
+allow bootanim arm_mali_platform_service:service_manager find;
