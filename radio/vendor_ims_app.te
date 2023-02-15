@@ -13,7 +13,6 @@ allow vendor_ims_app cameraserver_service:service_manager find;
 allow vendor_ims_app mediametrics_service:service_manager find;
 
 allow vendor_ims_app self:udp_socket { create_socket_perms_no_ioctl };
-allow platform_app vendor_ims_app:udp_socket { getattr read write setopt shutdown };
 
 binder_call(vendor_ims_app, rild)
 set_prop(vendor_ims_app, vendor_rild_prop)
