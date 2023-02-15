@@ -9,12 +9,8 @@ dontaudit priv_app privapp_data_file:file { open };
 dontaudit priv_app privapp_data_file:file { setattr };
 # b/260768358
 dontaudit priv_app default_android_service:service_manager { find };
-dontaudit priv_app euiccpixel_app:binder { transfer };
 # b/260922442
 dontaudit priv_app default_android_service:service_manager { find };
-dontaudit priv_app euiccpixel_app:binder { transfer };
-# b/262455954
-dontaudit priv_app euiccpixel_app:binder { call };
 # b/263185432
 dontaudit priv_app privapp_data_file:file { unlink };
 # b/264490074
