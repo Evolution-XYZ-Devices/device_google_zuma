@@ -1,7 +1,3 @@
-# Exynos
-genfscon sysfs /devices/platform/exynos-bts                                    u:object_r:sysfs_exynos_bts:s0
-genfscon sysfs /devices/platform/exynos-bts/bts_stats                          u:object_r:sysfs_exynos_bts_stats:s0
-
 genfscon sysfs /devices/soc0/machine                                           u:object_r:sysfs_soc:s0
 genfscon sysfs /devices/soc0/revision                                          u:object_r:sysfs_soc:s0
 
