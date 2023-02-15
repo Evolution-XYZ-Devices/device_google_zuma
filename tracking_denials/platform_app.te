@@ -1,4 +1,0 @@
-# b/264490036
-userdebug_or_eng(`
-  permissive platform_app;
-')

@@ -1,6 +1,2 @@
 # b/260522279
 dontaudit bootanim system_data_file:dir { search };
-# b/264489606
-userdebug_or_eng(`
-  permissive bootanim;
-')
