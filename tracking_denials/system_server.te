@@ -1,9 +1,0 @@
-# b/261519050
-dontaudit system_server con_monitor_app:binder { call };
-dontaudit system_server con_monitor_app:binder { transfer };
-# b/262455682
-dontaudit system_server con_monitor_app:process { setsched };
-# b/264489786
-userdebug_or_eng(`
-  permissive system_server;
-')
