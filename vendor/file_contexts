@@ -3,7 +3,7 @@
 /vendor/bin/hw/android\.hardware\.boot@1\.2-service-zuma                    u:object_r:hal_bootctl_default_exec:s0
 /vendor/bin/hw/android\.hardware\.gxp\.logging@service-gxp-logging          u:object_r:gxp_logging_exec:s0
 /vendor/bin/hw/android\.hardware\.power\.stats-service\.pixel               u:object_r:hal_power_stats_default_exec:s0
-/vendor/bin/hw/android\.hardware\.secure_element@1\.2-service-gto           u:object_r:hal_secure_element_st54spi_exec:s0
+/vendor/bin/hw/android\.hardware\.secure_element-service\.thales                    u:object_r:hal_secure_element_st54spi_aidl_exec:s0
 /vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.goodix  u:object_r:hal_fingerprint_default_exec:s0
 /vendor/bin/hw/android\.hardware\.biometrics\.fingerprint-service\.goodix   u:object_r:hal_fingerprint_default_exec:s0
 /vendor/bin/hw/android\.hardware\.usb-service                               u:object_r:hal_usb_impl_exec:s0
@@ -12,6 +12,7 @@
 /vendor/bin/hw/android\.hardware\.secure_element-service.uicc               u:object_r:hal_secure_element_uicc_exec:s0
 /vendor/bin/hw/android\.hardware\.qorvo\.uwb\.service                       u:object_r:hal_uwb_vendor_default_exec:s0
 /vendor/bin/hw/android\.hardware\.composer\.hwc3-service\.pixel             u:object_r:hal_graphics_composer_default_exec:s0
+/vendor/bin/hw/android\.hardware\.contexthub-service\.generic               u:object_r:hal_contexthub_default_exec:s0
 /vendor/bin/hw/google\.hardware\.media\.c2@2\.0-service                     u:object_r:mediacodec_google_exec:s0
 /vendor/bin/dump/dump_wlan\.sh                                              u:object_r:dump_wlan_exec:s0
 /vendor/bin/dump/dump_cma\.sh                                               u:object_r:dump_cma_exec:s0
@@ -26,6 +27,7 @@
 /vendor/bin/hw/android\.hardware\.security\.keymint-service\.trusty         u:object_r:hal_keymint_default_exec:s0
 /vendor/bin/hw/android\.hardware\.security\.keymint-service\.rust\.trusty         u:object_r:hal_keymint_default_exec:s0
 /vendor/bin/ufs_firmware_update\.sh                                         u:object_r:ufs_firmware_update_exec:s0
+/vendor/bin/hw/android\.hardware\.memtrack-service\.pixel                   u:object_r:hal_memtrack_default_exec:s0
 
 # Vendor Firmwares
 /vendor/firmware(/.*)?                                                      u:object_r:vendor_fw_file:s0
@@ -103,13 +105,14 @@
 /dev/logbuffer_maxfg_flip_monitor                                           u:object_r:logbuffer_device:s0
 /dev/logbuffer_wc68                                                         u:object_r:logbuffer_device:s0
 /dev/logbuffer_bd                                                           u:object_r:logbuffer_device:s0
-/dev/lwis-act-jotnar                                                        u:object_r:lwis_device:s0
-/dev/lwis-act-slenderman                                                    u:object_r:lwis_device:s0
-/dev/lwis-act-slenderman-sandworm                                           u:object_r:lwis_device:s0
 /dev/lwis-act-cornerfolk                                                    u:object_r:lwis_device:s0
 /dev/lwis-act-cornerfolk-dokkaebi                                           u:object_r:lwis_device:s0
 /dev/lwis-act-cornerfolk-oksoko                                             u:object_r:lwis_device:s0
 /dev/lwis-act-cornerfolk-sandworm                                           u:object_r:lwis_device:s0
+/dev/lwis-act-jotnar                                                        u:object_r:lwis_device:s0
+/dev/lwis-act-nessie                                                        u:object_r:lwis_device:s0
+/dev/lwis-act-slenderman                                                    u:object_r:lwis_device:s0
+/dev/lwis-act-slenderman-sandworm                                           u:object_r:lwis_device:s0
 /dev/lwis-be-core                                                           u:object_r:lwis_device:s0
 /dev/lwis-csi                                                               u:object_r:lwis_device:s0
 /dev/lwis-dpm                                                               u:object_r:lwis_device:s0
@@ -117,8 +120,11 @@
 /dev/lwis-eeprom-gargoyle                                                   u:object_r:lwis_device:s0
 /dev/lwis-eeprom-humbaba                                                    u:object_r:lwis_device:s0
 /dev/lwis-eeprom-jotnar                                                     u:object_r:lwis_device:s0
+/dev/lwis-eeprom-nessie                                                     u:object_r:lwis_device:s0
 /dev/lwis-eeprom-smaug-buraq                                                u:object_r:lwis_device:s0
 /dev/lwis-eeprom-smaug-dokkaebi                                             u:object_r:lwis_device:s0
+/dev/lwis-eeprom-smaug-leshen                                               u:object_r:lwis_device:s0
+/dev/lwis-eeprom-smaug-leshen-uw                                            u:object_r:lwis_device:s0
 /dev/lwis-eeprom-smaug-sandworm                                             u:object_r:lwis_device:s0
 /dev/lwis-flash-lm3644                                                      u:object_r:lwis_device:s0
 /dev/lwis-g3aa                                                              u:object_r:lwis_device:s0
@@ -132,10 +138,11 @@
 /dev/lwis-isp-fe                                                            u:object_r:lwis_device:s0
 /dev/lwis-lme                                                               u:object_r:lwis_device:s0
 /dev/lwis-mcsc                                                              u:object_r:lwis_device:s0
+/dev/lwis-ois-djinn                                                         u:object_r:lwis_device:s0
 /dev/lwis-ois-gargoyle                                                      u:object_r:lwis_device:s0
 /dev/lwis-ois-humbaba                                                       u:object_r:lwis_device:s0
 /dev/lwis-ois-jotnar                                                        u:object_r:lwis_device:s0
-/dev/lwis-ois-djinn                                                         u:object_r:lwis_device:s0
+/dev/lwis-ois-nessie                                                        u:object_r:lwis_device:s0
 /dev/lwis-pdp                                                               u:object_r:lwis_device:s0
 /dev/lwis-scsc                                                              u:object_r:lwis_device:s0
 /dev/lwis-sensor-boitata                                                    u:object_r:lwis_device:s0
@@ -143,6 +150,8 @@
 /dev/lwis-sensor-dokkaebi                                                   u:object_r:lwis_device:s0
 /dev/lwis-sensor-kraken                                                     u:object_r:lwis_device:s0
 /dev/lwis-sensor-lamassu                                                    u:object_r:lwis_device:s0
+/dev/lwis-sensor-leshen                                                     u:object_r:lwis_device:s0
+/dev/lwis-sensor-leshen-uw                                                  u:object_r:lwis_device:s0
 /dev/lwis-sensor-nagual                                                     u:object_r:lwis_device:s0
 /dev/lwis-sensor-oksoko                                                     u:object_r:lwis_device:s0
 /dev/lwis-sensor-sandworm                                                   u:object_r:lwis_device:s0
@@ -163,7 +172,8 @@
 /dev/dma_heap/famodel-secure                                                u:object_r:faceauth_heap_device:s0
 /dev/dma_heap/faprev-secure                                                 u:object_r:faceauth_heap_device:s0
 /dev/dma_heap/farawimg-secure                                               u:object_r:faceauth_heap_device:s0
-/dev/dma_heap/vframe-secure                                                 u:object_r:video_secure_heap_device:s0
-/dev/dma_heap/vscaler-secure                                                u:object_r:video_secure_heap_device:s0
+/dev/dma_heap/framebuffer-secure                                            u:object_r:framebuffer_secure_heap_device:s0
+/dev/dma_heap/vframe-secure                                                 u:object_r:dmabuf_system_secure_heap_device:s0
+/dev/dma_heap/vscaler-secure                                                u:object_r:vscaler_secure_heap_device:s0
 /dev/dma_heap/vstream-secure                                                u:object_r:dmabuf_system_secure_heap_device:s0
 /dev/uci                                                                    u:object_r:uci_device:s0
