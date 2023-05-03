@@ -17,6 +17,9 @@ binder_call(hal_sensors_default, hal_graphics_composer_default);
 # Allow sensor HAL to access the display service HAL
 allow hal_sensors_default hal_pixel_display_service:service_manager find;
 
+# Allow sensor HAL to access the thermal service HAL
+hal_client_domain(hal_sensors_default, hal_thermal);
+
 # Allow reading of sensor registry persist files and camera persist files.
 allow hal_sensors_default mnt_vendor_file:dir search;
 allow hal_sensors_default persist_file:dir search;
@@ -45,6 +48,9 @@ binder_call(hal_sensors_default, system_server);
 
 # Allow access for dynamic sensor properties.
 get_prop(hal_sensors_default, vendor_dynamic_sensor_prop)
+
+# Allow access to raw HID devices for dynamic sensors.
+allow hal_sensors_default hidraw_device:chr_file rw_file_perms;
 
 # Allow access to the display info for ALS.
 allow hal_sensors_default sysfs_display:file rw_file_perms;
